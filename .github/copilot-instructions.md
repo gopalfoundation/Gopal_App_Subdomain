@@ -1,0 +1,9 @@
+# Repository Instructions
+
+- Build campaign pages with static HTML, CSS, and browser-native JavaScript. Do not add a framework, build system, package dependency, or server-side code without an explicit project decision.
+- Keep the home page at the repository root and put additional independent HTML pages in the generic `pages/` folder (for example, `pages/web-dev.html`). Place shared assets in `assets/css/`, `assets/js/`, and `assets/images/`; use paths appropriate to the page depth, such as `../assets/css/site.css` for a page one folder deep.
+- Use semantic HTML, one descriptive page title and primary heading, a unique meta description, responsive layouts, keyboard-accessible controls, visible focus states, and meaningful image alt text. Test narrow and wide viewports.
+- Keep pages fast: avoid unnecessary scripts and third-party requests, optimize and appropriately size images, lazy-load below-the-fold images, and set image dimensions to reduce layout shifts. Prefer local assets where practical.
+- Only add Google Ads tags or conversion snippets supplied or approved by the organization. Put the global tag in the document head, use the real account/conversion IDs, and trigger conversion events only after the corresponding action succeeds. Never invent IDs, duplicate tags, or include secrets in client-side code. Follow the organization's consent and privacy requirements.
+- A static HTML form cannot securely process or store registrations by itself. Connect forms only to an approved form service or backend; do not imply a submission succeeded until the endpoint confirms it, and do not collect unnecessary sensitive data.
+- Keep changes focused on the campaign being edited. Do not change Firebase deployment settings or shared pages as part of an individual campaign unless required and coordinated.
