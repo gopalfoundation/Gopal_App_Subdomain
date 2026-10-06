@@ -8,12 +8,50 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: firebase-programs-production
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Verify organization deployment configuration
+        run: node scripts/verify-deployment-config.mjs
+        env:
+          FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+          SERVICE_ACCOUNT_CONFIGURED: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_GLORY_OF_PEACE != '' }}
+          CMS_BUCKET: ${{ vars.CMS_BUCKET }}
+
+      - run: npm ci
+      - run: npm ci --prefix firebase/functions
+      - run: npm test
+      - run: npm run build
+        env:
+          SKIP_VIDEO_SYNC: 'true'
+
+      - name: Authenticate to the existing Google project
+        uses: google-github-actions/auth@v3
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_GLORY_OF_PEACE }}
+
+      - name: Deploy secure runtime before Hosting
+        run: |
+          node scripts/write-function-parameters.mjs
+          npx --yes firebase-tools@15.2.1 deploy --only functions:gopal-programs --project "$FIREBASE_PROJECT_ID" --non-interactive
+        env:
+          FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+          CMS_BUCKET: ${{ vars.CMS_BUCKET }}
 
       - name: Deploy live site
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -23,3 +61,4 @@ jobs:
           projectId: ${{ vars.FIREBASE_PROJECT_ID }}
           target: gloryofpeace-landing
           channelId: live
+          firebaseToolsVersion: 15.2.1

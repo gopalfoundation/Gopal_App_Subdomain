@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+---
+<BaseLayout title="Accessibility | SITA RAM Initiatives" description="Accessibility statement for SITA RAM Initiatives.">
+  <section class="page-hero"><div class="container page-hero__inner"><h1>Accessibility</h1><p class="lede">SITA RAM Initiatives aims to provide a website that is welcoming and usable for all visitors.</p></div></section>
+  <section class="section"><div class="container prose">
+    <h2>Our Commitment</h2>
+    <p>The site is built with semantic HTML, readable text, keyboard-friendly navigation and responsive layouts.</p>
+    <h2>Report an Issue</h2>
+    <p>If you experience an accessibility barrier, please email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.</p>
+  </div></section>
+</BaseLayout>

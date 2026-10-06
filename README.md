@@ -1,60 +1,65 @@
-# Gopal_App_Subdomain
+# SITA RAM Initiatives
 
-Static campaign pages for Glory of Peace and Love, hosted on Firebase Hosting.
+The approved GOPAL Foundation programs website, retaining its Astro static-first
+architecture, responsive initiatives mega menu, RAM and SITA control centers,
+programs, articles, videos, testimonials and per-opportunity registration UX.
 
-## Add a campaign page
+- Repository: [gopalfoundation/Gopal_App_Subdomain](https://github.com/gopalfoundation/Gopal_App_Subdomain)
+- Production: [programs.gloryofpeaceandlove.org](https://programs.gloryofpeaceandlove.org)
+- Production branch: `main`; migration branch: `codex/production-programs-migration`
+- Firebase Hosting target: `gloryofpeace-landing`
 
-1. Put each additional HTML page in the generic `pages/` folder, using a descriptive filename such as `pages/web-dev.html`.
-2. Start from `index.html`, update the page title, description, heading, content, and links, then adjust asset paths for the page's folder. For a page directly inside one of these folders, link the shared stylesheet as `../assets/css/site.css`.
-3. Store images under `assets/images/`; add JavaScript under `assets/js/` only when the page needs behavior.
-4. For registration forms, use an organization-approved form endpoint or service. Static HTML alone cannot receive or store submissions.
-5. Add and test the page locally, then commit and push it to `main` to deploy it live.
+## Develop And Validate
 
-## Test locally
-
-From the repository root, run:
+Use Node.js 22 LTS and npm:
 
 ```sh
-python3 -m http.server 8000
+npm ci
+npm ci --prefix firebase/functions
+npm run dev -- --host 127.0.0.1 --port 4321
+npm test
+npm run build
 ```
 
-Open `http://localhost:8000/` or `http://localhost:8000/pages/web-dev.html`. Stop the server with `Ctrl+C`.
+The local editor's one-time password setup remains local-only. Production uses
+server secrets, not the local setup route. See `REGISTRATION-BACKEND-SETUP.md`.
 
-## Project structure
+## Architecture
 
-```text
-index.html
-pages/
-	web-dev.html
-assets/
-	css/site.css
-	images/
-	js/
-```
+Astro generates crawlable HTML from the approved source. Firebase Hosting serves
+assets from `dist/hosting`. The `programsApp` Node.js 22 HTTPS function serves
+prebuilt HTML and applies published CMS updates using existing renderers.
+It protects Admin and runs existing authenticated registration APIs.
+Private Cloud Storage JSON files hold CMS drafts/published content and media;
+participant responses stay in the restricted Google Sheet behind Apps Script.
+No SQL, Firestore, public spreadsheet, or browser credentials are introduced.
 
-Keep the home page at the repository root and put additional HTML pages in `pages/`. Pages one folder deep should use `../assets/...` to reuse shared files. Keep assets in the shared folders rather than copying them into `pages/`.
+Admin HTML lives only in the function package, never in Hosting's public directory.
+Mutable CMS JSON is served by the runtime so static files cannot shadow changes.
+Public registration success requires a backend receipt.
 
-## Firebase and GitHub setup
+The organization starter Firebase target, cache headers and secret/variable names
+are preserved. Its dummy index was intentionally replaced by Astro source.
+The old empty `pages/` and starter `assets/` are not deployed.
 
-The workflow in `.github/workflows/deploy.yml` runs on every push to `main`. It checks out the repository and uses `FirebaseExtended/action-hosting-deploy@v0` to publish the configured Hosting target directly to its live channel. There is no build step because the site is static. A live deploy replaces the current contents of that Firebase Hosting site, so deploys from this repository must contain every page intended to remain available there.
+## Content
 
-Before the first deploy:
+- `public/content/website.json`: global settings, navigation and homepage seed.
+- `public/content/ram.json`, `public/content/sita.json`: initiative/form seeds.
+- `src/content/`: existing general programs, articles and events.
+- `src/data/testimonials.json`: empty seed; private editorial records stay in storage.
+- `src/pages/admin.astro`: simplified Admin; RAM/SITA retain their own tools.
+- `integrations/google-apps-script/ram-responses.gs`: private registration provider.
+- `firebase/`: runtime adapters, not a redesign of the application.
 
-1. In the Firebase project, create or identify the Hosting site. The target alias in `firebase.json` is `gloryofpeace-landing`; it must map to the actual Hosting site ID.
-2. Install the Firebase CLI and authenticate, then create the target mapping from the repository root:
+Online publishing updates private CMS files and public HTML without a code push.
+Source/seed changes require review and deployment; existing online records take
+precedence. Back up CMS files privately before intentionally replacing them.
+Never commit unpublished testimonials or participant responses.
 
-	```sh
-	firebase target:apply hosting gloryofpeace-landing <hosting-site-id> --project <firebase-project-id>
-	```
+## Status
 
-	Commit the generated `.firebaserc`. If the Hosting site ID is also `gloryofpeace-landing`, use that as `<hosting-site-id>`.
-3. In GitHub repository settings, add the Actions variable `FIREBASE_PROJECT_ID` with the Firebase project ID.
-4. Add the Actions secret `FIREBASE_SERVICE_ACCOUNT_GLORY_OF_PEACE` containing the service account JSON key. The account needs permission to deploy to Firebase Hosting.
-5. Push to `main`. GitHub provides `secrets.GITHUB_TOKEN` automatically; the workflow uses it as the action's `repoToken`.
-6. Add and verify the desired subdomain in Firebase Hosting, then configure the DNS records Firebase provides at your domain registrar. The workflow deploys content; it does not configure DNS.
-
-The workflow's `channelId: live` publishes directly to the live site, not a review channel. Confirm the change before merging or pushing to `main`.
-
-## Google Ads and privacy
-
-Only add organization-approved Google Ads tags and real account/conversion IDs. Put the global tag in the page `<head>` and fire conversion events only after a successful conversion. Follow the organization's consent and privacy requirements; never commit credentials or invent tracking IDs. See `.github/copilot-instructions.md` for page and form conventions.
+The production domain was observed serving the starter page on 2026-10-06. The
+recorded organization deployment failed due to a missing service-account input.
+Migration validation does not prove live deployment. See [DEPLOYMENT.md](DEPLOYMENT.md)
+for setup, release validation and rollback.

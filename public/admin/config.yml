@@ -1,0 +1,88 @@
+backend:
+  name: test-repo
+local_backend: false
+media_folder: public/uploads
+public_folder: /uploads
+collections:
+  - name: settings
+    label: Site Settings
+    files:
+      - label: Global Site Settings
+        name: site
+        file: src/data/site.json
+        fields:
+          - { label: Organization Name, name: organizationName, widget: string }
+          - { label: Organization Short Name, name: organizationShortName, widget: string }
+          - { label: Site Name, name: siteName, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Main Website URL, name: mainWebsiteUrl, widget: string }
+          - { label: Donation URL, name: donationUrl, widget: string }
+          - { label: Contact Email, name: contactEmail, widget: string }
+          - label: Logos
+            name: logos
+            widget: object
+            fields:
+              - { label: GOPAL Logo, name: gopal, widget: image }
+              - { label: RAM Logo, name: ram, widget: image }
+              - { label: SITA Logo, name: sita, widget: image }
+              - { label: Bhaktisaurabh Logo, name: bhaktisurabh, widget: image }
+              - { label: Footer Logo, name: footer, widget: image }
+      - label: Homepage
+        name: homepage
+        file: src/data/homepage.json
+        fields:
+          - { label: Eyebrow, name: eyebrow, widget: string }
+          - { label: Headline, name: headline, widget: string }
+          - { label: Description, name: description, widget: text }
+          - label: Primary CTA
+            name: primaryCta
+            widget: object
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Destination, name: href, widget: string }
+              - { label: Enabled, name: enabled, widget: boolean }
+          - label: Secondary CTA
+            name: secondaryCta
+            widget: object
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Destination, name: href, widget: string }
+              - { label: Enabled, name: enabled, widget: boolean }
+  - name: programs
+    label: Programs
+    folder: src/content/programs
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Initiative, name: initiative, widget: select, options: ["RAM", "SITA", "Community Programs", "Bhaktisaurabh"] }
+      - { label: Description, name: description, widget: text }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Display Order, name: order, widget: number, default: 99 }
+      - { label: Registration URL, name: registrationUrl, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: events
+    label: Events
+    folder: src/content/events
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Date, name: date, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Body, name: body, widget: markdown }
+  - name: articles
+    label: Articles
+    folder: src/content/articles
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Category, name: category, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Body, name: body, widget: markdown }

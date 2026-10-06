@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+---
+<BaseLayout title="Community Programs | SITA RAM Initiatives" description="Explore community programs rooted in values, service, education, family wellbeing and spiritual learning.">
+  <section class="page-hero" data-program-page data-program-title="Community Programs" data-program-id="community-programs">
+    <div class="container page-hero__inner">
+      <img src={site.logos.bhaktisurabh} alt="Bhaktisaurabh logo" data-initiative-logo />
+      <p class="eyebrow" data-admin-text="initiativeEyebrow">Values and Service</p>
+      <h1 data-admin-text="initiativeTitle">Community Programs</h1>
+      <p class="lede" data-admin-text="initiativeIntro">Community Programs bring educational, spiritual, cultural, youth and family initiatives together through service and shared values.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container prose" data-initiative-content>
+      <h2>Serving Individuals, Families and Communities</h2>
+      <p>This area is designed to grow as events, gatherings, youth programs, family programs and volunteer opportunities are confirmed.</p>
+      <h2>Program Types</h2>
+      <ul>
+        <li>Educational and cultural gatherings</li>
+        <li>Youth and family programs</li>
+        <li>Volunteer and service opportunities</li>
+        <li>Programs connected with Bhaktisaurabh and related initiatives</li>
+      </ul>
+      <div class="actions">
+        <a class="button button--primary" href="/get-involved">Get Involved</a>
+      </div>
+    </div>
+  </section>
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Registrations</h2>
+        <p>Current and upcoming community registration forms appear here as compact launch cards.</p>
+      </div>
+      <div data-initiative-registrations></div>
+    </div>
+  </section>
+  <section class="section section--cream" data-inline-rsvp-section hidden>
+    <div class="container" data-inline-rsvp></div>
+  </section>
+</BaseLayout>

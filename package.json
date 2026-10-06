@@ -1,0 +1,36 @@
+{
+  "name": "sita-ram-initiatives",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build && node scripts/validate-links.mjs && node scripts/build-firebase.mjs && node scripts/validate-firebase.mjs",
+    "build:hosting": "npm run build",
+    "test": "node --test scripts/ram.test.mjs scripts/registration-backend.test.mjs scripts/sita.test.mjs scripts/cms.test.mjs scripts/local-admin-setup.test.mjs scripts/website.test.mjs scripts/firebase.test.mjs",
+    "test:firebase": "node --test scripts/firebase.test.mjs",
+    "preview:firebase": "node scripts/firebase-preview.mjs",
+    "test:ram": "node --test scripts/ram.test.mjs scripts/registration-backend.test.mjs",
+    "test:sita": "node --test scripts/sita.test.mjs scripts/cms.test.mjs",
+    "test:admin": "node --test scripts/local-admin-setup.test.mjs",
+    "test:website": "node --test scripts/website.test.mjs",
+    "preview": "node scripts/firebase-preview.mjs",
+    "check": "astro check",
+    "validate:links": "node scripts/validate-links.mjs"
+  },
+  "overrides": {"gaxios":{"uuid":"^11.1.1"}},
+  "devDependencies": {
+    "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.13.3",
+    "@google-cloud/storage": "^8.2.0",
+    "cheerio": "^1.1.0",
+    "firebase-functions": "^7.4.0",
+    "fast-xml-parser": "^5.11.2",
+    "lucide": "^1.49.0",
+    "typescript": "^5.6.3"
+  }
+}

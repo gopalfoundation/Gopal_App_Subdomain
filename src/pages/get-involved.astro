@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+---
+<BaseLayout title="Get Involved | SITA RAM Initiatives" description="Join a program, attend an event, volunteer or support SITA RAM Initiatives.">
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Get Involved</p>
+      <h1>Participate, Volunteer or Support</h1>
+      <p class="lede">Choose the next step that best fits your interest in values-based learning and community service.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-grid">
+      <a class="content-card" href="/programs"><h3>Join a Program</h3><p>Explore current and future program areas across RAM, SITA and Community Programs.</p></a>
+      <a class="content-card" href="/events"><h3>Attend an Event</h3><p>Find upcoming sessions and gatherings as event details are added.</p></a>
+      <a class="content-card" href={site.donationUrl}><h3>Support the Mission</h3><p>Visit GOPAL Foundation to learn about current support options.</p></a>
+    </div>
+  </section>
+</BaseLayout>

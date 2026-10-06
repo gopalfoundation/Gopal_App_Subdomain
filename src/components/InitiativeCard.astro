@@ -1,0 +1,20 @@
+---
+interface Props {
+  name: string;
+  subtitle: string;
+  description: string;
+  logo: string;
+  href: string;
+  tone?: string;
+}
+
+const { name, subtitle, description, logo, href, tone = 'gold' } = Astro.props;
+---
+<a class="initiative-card" data-tone={tone} href={href}>
+  <img src={logo} alt={`${name} logo`} loading="lazy" width="160" height="160" />
+  <span>
+    <h3>{name}</h3>
+    <p><strong>{subtitle}</strong></p>
+    <p>{description}</p>
+  </span>
+</a>

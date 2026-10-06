@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import website from '../../public/content/website.json';
+import {cardsMarkup} from '../lib/website/model.mjs';
+const page = website.initiativesPage;
+---
+<BaseLayout title={page.seoTitle} description={page.seoDescription}>
+  <section class="page-hero" data-initiatives-hero style={`background-image: linear-gradient(90deg,rgba(255,253,247,.97),rgba(255,250,240,.85)),url(${page.image});`}>
+    <div class="container"><div class="page-hero__inner">
+      <p class="eyebrow" data-website-text="initiativesPage.eyebrow">{page.eyebrow}</p>
+      <h1 data-website-text="initiativesPage.title">{page.title}</h1>
+      <p class="lede" data-website-text="initiativesPage.introduction">{page.introduction}</p>
+    </div></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="initiative-grid" data-website-cards="initiatives" set:html={cardsMarkup(website)} />
+    </div>
+  </section>
+</BaseLayout>

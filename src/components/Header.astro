@@ -1,0 +1,28 @@
+---
+import website from '../../public/content/website.json';
+import {primaryMarkup} from '../lib/website/model.mjs';
+const {site} = website;
+---
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span data-website-topbar>Programs by {site.organizationName} ({site.organizationShortName})</span>
+    <a href={site.mainWebsiteUrl} data-website-href="site.mainWebsiteUrl" data-website-text="site.utilityLabel" hidden={!site.showUtility}>{site.utilityLabel}</a>
+  </div>
+</div>
+<header class="site-header" id="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="SITA RAM Initiatives home">
+      <img src={site.logo} data-website-image="site.logo" alt="GOPAL Foundation logo" width="76" height="76" />
+      <span class="brand__divider" aria-hidden="true"></span>
+      <span>
+        <span class="brand__title" data-website-text="site.brandTitle">{site.brandTitle}</span>
+        <span class="brand__subtitle">Initiatives</span>
+      </span>
+    </a>
+    <nav class="nav" id="primary-menu" aria-label="Primary navigation" set:html={primaryMarkup(website,Astro.url.pathname)} />
+    <a class="button button--gold header-support" href={site.donationUrl} data-website-href="site.donationUrl" data-website-text="site.supportLabel">{site.supportLabel}</a>
+    <button class="mobile-toggle" type="button" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">
+      <i data-lucide="Menu" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,5 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/sita.css';
+---
+<BaseLayout title="SITA Article Preview" description="SITA article preview." indexable={false}><div class="sita-page"><section class="sita-section"><div class="container"><article class="sita-detail" data-sita-detail><h1>Article Preview</h1></article></div></section></div><script>import {initSitaDetail} from '../../lib/sita/detail.mjs';initSitaDetail('article');</script></BaseLayout>

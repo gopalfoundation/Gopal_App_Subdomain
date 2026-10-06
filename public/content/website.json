@@ -1,0 +1,123 @@
+{
+  "updatedAt": "2026-10-04T00:00:00.000Z",
+  "site": {
+    "organizationName": "Glory of Peace and Love",
+    "organizationShortName": "GOPAL Foundation",
+    "brandTitle": "SITA RAM",
+    "tagline": "Values, learning and service for a brighter tomorrow.",
+    "mainWebsiteUrl": "https://gloryofpeaceandlove.org",
+    "donationUrl": "https://gloryofpeaceandlove.org",
+    "supportLabel": "Support Our Work",
+    "utilityLabel": "Visit Main Website",
+    "showUtility": true,
+    "logo": "/logos/gopal-logo.png",
+    "favicon": "/favicon.svg",
+    "contactEmail": "info@sitaram.gloryofpeaceandlove.org",
+    "contactPhone": "",
+    "address": "GOPAL Foundation"
+  },
+  "navigation": {
+    "primary": [
+      { "id": "home", "label": "Home", "href": "/", "enabled": true },
+      { "id": "about", "label": "About", "href": "/about/", "enabled": true },
+      { "id": "initiatives", "label": "Our Initiatives", "href": "/programs/", "enabled": true },
+      { "id": "resources", "label": "Resources", "href": "/articles/", "enabled": true },
+      { "id": "involved", "label": "Get Involved", "href": "/get-involved/", "enabled": true },
+      { "id": "contact", "label": "Contact", "href": "/contact/", "enabled": true }
+    ],
+    "groups": [
+      { "id": "ram", "name": "RAM", "subtitle": "Ritambhar Academy of Mind", "logo": "/logos/ram-logo.png", "href": "/ram/", "enabled": true, "links": [
+        { "label": "Gita for Beginners", "href": "/ram/programs/gita-for-beginners/", "enabled": true },
+        { "label": "Emotional Intelligence", "href": "/ram/programs/gita-for-emotional-intelligence/", "enabled": true },
+        { "label": "Youth Leadership", "href": "/ram/programs/youth-leadership/", "enabled": true },
+        { "label": "Gita for Relationships", "href": "/ram/programs/gita-for-relationships/", "enabled": true }
+      ] },
+      { "id": "sita", "name": "SITA", "subtitle": "Sanskar Initiator Training Academy", "logo": "/logos/sita-logo.png", "href": "/sita/", "enabled": true, "links": [
+        { "label": "Vedic Garbh Vigyan", "href": "/sita/vedic-garbh-vigyan/", "enabled": true },
+        { "label": "Parenting Sessions", "href": "/sita/parenting/", "enabled": true },
+        { "label": "Mahila Empowerment", "href": "/sita/mahila-empowerment/", "enabled": true },
+        { "label": "All SITA Programs", "href": "/sita/programs/", "enabled": true }
+      ] },
+      { "id": "community", "name": "Community Programs", "subtitle": "Programs serving families and communities", "logo": "/logos/bhaktisurabh-logo.jpg", "href": "/community-programs/", "enabled": true, "links": [
+        { "label": "Children & Families", "href": "/community-programs/", "enabled": true },
+        { "label": "Youth Programs", "href": "/community-programs/", "enabled": true },
+        { "label": "Yoga", "href": "/community-programs/", "enabled": true },
+        { "label": "Satsang / Katha", "href": "/community-programs/", "enabled": true },
+        { "label": "Community Service", "href": "/community-programs/", "enabled": true }
+      ] }
+    ]
+  },
+  "home": {
+    "eyebrow": "VALUES / LEARNING / SERVICE",
+    "headline": "Nurturing Values for a Kinder World",
+    "description": "SITA RAM represents value-based initiatives of Glory of Peace and Love (GOPAL Foundation), focused on personal growth, family wellbeing, character development, education and community service.",
+    "image": "/images/hero-riverside-diya.png",
+    "primaryCta": { "label": "Explore Programs", "href": "/programs/", "enabled": true },
+    "secondaryCta": { "label": "About the Foundation", "href": "/about/", "enabled": true },
+    "initiativesHeading": "Our Initiatives",
+    "initiativesIntro": "Distinct programs, united by a common purpose: to build a more compassionate, value-driven and harmonious society.",
+    "aboutHeading": "About Us",
+    "aboutSummary": "RAM, SITA and Community Programs operate under Glory of Peace and Love (GOPAL Foundation), a nonprofit dedicated to human values, education, community wellbeing and a more harmonious society.",
+    "aboutRelated": "Bhaktisaurabh is a related initiative that nurtures devotion, values and spiritual wisdom, complementing our social and educational programs.",
+    "aboutImage": "/logos/bhaktisurabh-logo.jpg",
+    "featuredHeading": "Featured Programs",
+    "featuredIntro": "Explore opportunities for learning, personal growth and community connection.",
+    "featuredLinks": [
+      { "label": "Gita for Beginners", "href": "/ram/programs/gita-for-beginners/", "description": "Begin a journey of practical wisdom and mindful living.", "enabled": true },
+      { "label": "Vedic Garbh Vigyan", "href": "/sita/vedic-garbh-vigyan/", "description": "Learning and support for expectant mothers and families.", "enabled": true },
+      { "label": "Community Programs", "href": "/community-programs/", "description": "Connect through learning, shared values and service.", "enabled": true }
+    ],
+    "valuesHeading": "Why Choose Our Initiatives?",
+    "values": [
+      { "title": "Value-Centered Approach", "description": "Timeless wisdom for modern life, with attention to character, empathy and responsible living." },
+      { "title": "Holistic Development", "description": "Programs for individuals, families and communities, integrating education, values and service." },
+      { "title": "Stronger Communities", "description": "Building a more harmonious and compassionate society for present and future generations." }
+    ],
+    "sections": [
+      { "id": "initiatives", "label": "Initiative Cards", "enabled": true },
+      { "id": "about", "label": "About Summary", "enabled": true },
+      { "id": "values", "label": "Why Choose Our Initiatives", "enabled": true },
+      { "id": "featured", "label": "Featured Programs", "enabled": true }
+    ],
+    "seoTitle": "SITA RAM Initiatives | Glory of Peace and Love",
+    "seoDescription": "Explore RAM, SITA and community initiatives for values, learning, family wellbeing and service."
+  },
+  "initiativesPage": {
+    "eyebrow": "Values, Learning & Service",
+    "title": "Our Initiatives",
+    "introduction": "Three distinct initiatives, one shared purpose. Find programs that nurture the mind, strengthen families and bring communities together.",
+    "image": "/images/hero-riverside-diya.png",
+    "seoTitle": "Our Initiatives | SITA RAM",
+    "seoDescription": "Explore Ritambhar Academy of Mind, Sanskar Initiator Training Academy and Community Programs.",
+    "cards": [
+      { "id": "ram", "name": "RAM", "subtitle": "Ritambhar Academy of Mind", "description": "Character development, mind training, leadership, life skills and value-based learning.", "logo": "/logos/ram-logo.png", "href": "/ram/", "enabled": true, "featured": true, "tone": "gold" },
+      { "id": "sita", "name": "SITA", "subtitle": "Sanskar Initiator Training Academy", "description": "Supporting individuals and families through Sanskar, parenting, wellbeing and value-based life skills.", "logo": "/logos/sita-logo.png", "href": "/sita/", "enabled": true, "featured": true, "tone": "rose" },
+      { "id": "community", "name": "Community Programs", "subtitle": "Programs rooted in values and service", "description": "Educational, spiritual, youth, family, cultural and community programs rooted in values and service.", "logo": "/logos/bhaktisurabh-logo.jpg", "href": "/community-programs/", "enabled": true, "featured": true, "tone": "sky" }
+    ]
+  },
+  "footer": {
+    "logo": "/logos/gopal-logo.png",
+    "description": "Values, learning and service for a brighter tomorrow.",
+    "copyright": "Glory of Peace and Love. SITA RAM Initiatives is a program identity of GOPAL Foundation.",
+    "quickLinks": [
+      { "label": "Home", "href": "/", "enabled": true },
+      { "label": "About", "href": "/about/", "enabled": true },
+      { "label": "Our Initiatives", "href": "/programs/", "enabled": true },
+      { "label": "Resources", "href": "/articles/", "enabled": true },
+      { "label": "Contact", "href": "/contact/", "enabled": true }
+    ],
+    "legalLinks": [
+      { "label": "Privacy", "href": "/privacy/", "enabled": true },
+      { "label": "Accessibility", "href": "/accessibility/", "enabled": true }
+    ],
+    "socialLinks": []
+  },
+  "seo": {
+    "defaultTitle": "SITA RAM Initiatives | Glory of Peace and Love",
+    "titlePattern": "{title} | SITA RAM Initiatives",
+    "description": "Explore SITA RAM initiatives focused on values, learning, family wellbeing and service.",
+    "robots": "index, follow",
+    "verification": "",
+    "socialImage": ""
+  }
+}

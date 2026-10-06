@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import content from '../../../../public/content/sita.json';
+import {renderDetail} from '../../../lib/sita/detail.mjs';
+import '../../../styles/sita.css';
+interface Article { slug:string; initiative:string; published:boolean; title:string; seoTitle?:string; seoDescription?:string; excerpt:string; socialImage?:string; image:string; body:string; }
+export function getStaticPaths(){return (content.articles as Article[]).filter(a=>a.published&&a.initiative==='SITA').map(article=>({params:{slug:article.slug},props:{article}}));}
+const {article}=Astro.props;
+---
+<BaseLayout title={article.seoTitle||article.title} description={article.seoDescription||article.excerpt} socialImage={article.socialImage||article.image}><div class="sita-page"><section class="sita-section"><div class="container"><article class="sita-detail" data-sita-detail data-sita-record-slug={article.slug} set:html={renderDetail(article,content,'article')}></article></div></section></div><script>import {initSitaDetail} from '../../../lib/sita/detail.mjs';initSitaDetail('article');</script></BaseLayout>
