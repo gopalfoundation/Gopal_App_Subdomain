@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/sita.css';
+import '../styles/testimonials.css';
+import content from '../../public/content/sita.json';
+import { renderPage } from '../lib/sita/render.mjs';
+import testimonials from '../data/testimonials.json';
+import { publicTestimonials } from '../lib/testimonials/model.mjs';
+---
+<BaseLayout title={content.seo.title} description={content.seo.description} canonicalUrl={content.seo.canonical} socialTitle={content.seo.socialTitle} socialDescription={content.seo.socialDescription} socialImage={content.seo.socialImage} indexable={content.seo.index}>
+  <div class="sita-page" data-sita-root set:html={renderPage(content,publicTestimonials(testimonials,'SITA'))}></div>
+  <script>
+    import { initSitaPage } from '../lib/sita/page.mjs';
+    initSitaPage();
+  </script>
+</BaseLayout>

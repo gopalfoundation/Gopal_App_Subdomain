@@ -1,0 +1,1032 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-02T05:09:25.514Z",
+  "hero": {
+    "logo": "/logos/ram-logo.png",
+    "logoAlt": "Ritambhar Academy of Mind logo",
+    "image": "/images/hero-riverside-diya.png",
+    "imageAlt": "A lamp overlooking a peaceful riverside at sunrise",
+    "eyebrow": "VALUES. WISDOM. EVERYDAY LIFE.",
+    "title": "Ritambhar Academy of Mind (RAM)",
+    "tagline": "Empowering Minds. Guiding Lives.",
+    "intro": "Discover timeless wisdom for a balanced mind, meaningful relationships and a life guided by values.",
+    "brandWords": [
+      "Clarity",
+      "Character",
+      "Compassion",
+      "A Brighter Tomorrow"
+    ],
+    "primaryLabel": "Explore Programs",
+    "primaryUrl": "#featured-programs",
+    "primaryVisible": true,
+    "secondaryLabel": "Register Now",
+    "secondaryUrl": "#opportunities",
+    "secondaryVisible": true
+  },
+  "about": {
+    "heading": "About Ritambhar Academy of Mind",
+    "description": "Learning that goes beyond knowledge. RAM brings together the wisdom of the Bhagavad Gita, thoughtful reflection and practical life skills to help people grow with clarity and purpose.\n\nAn initiative of Glory of Peace and Love (GOPAL Foundation), RAM creates welcoming spaces for personal growth, character development and compassionate action.",
+    "buttonLabel": "Learn More About RAM",
+    "buttonUrl": "/about/",
+    "buttonVisible": true,
+    "image": "",
+    "imageAlt": "",
+    "values": [
+      {
+        "id": "value-learning",
+        "icon": "BookOpen",
+        "title": "Value-Based Learning",
+        "description": "Timeless wisdom, thoughtfully applied to everyday choices.",
+        "enabled": true,
+        "displayOrder": 1
+      },
+      {
+        "id": "value-growth",
+        "icon": "Sprout",
+        "title": "Holistic Development",
+        "description": "Grow in awareness, confidence and strength of character.",
+        "enabled": true,
+        "displayOrder": 2
+      },
+      {
+        "id": "value-community",
+        "icon": "Users",
+        "title": "Stronger Communities",
+        "description": "Build meaningful relationships rooted in mutual care.",
+        "enabled": true,
+        "displayOrder": 3
+      },
+      {
+        "id": "value-service",
+        "icon": "HeartHandshake",
+        "title": "Service Mindset",
+        "description": "Turn learning into considerate, purposeful action.",
+        "enabled": true,
+        "displayOrder": 4
+      }
+    ]
+  },
+  "programsHeading": "Featured Programs",
+  "programsIntro": "Wisdom for the mind. Skills for life.",
+  "programs": [
+    {
+      "id": "gita-beginners",
+      "initiative": "RAM",
+      "title": "Gita for Beginners",
+      "slug": "gita-for-beginners",
+      "image": "/images/hero-riverside-diya.png",
+      "imageAlt": "Peaceful riverside and a traditional lamp",
+      "shortDescription": "An accessible introduction to the Bhagavad Gita and its wisdom for daily life.",
+      "fullDescription": "Explore themes of purpose, thoughtful action and self-awareness through guided readings and discussion. This learning series invites questions and reflection, with no prior study required.",
+      "category": "Gita Programs",
+      "audience": "Ages 15+",
+      "featured": true,
+      "active": true,
+      "displayOrder": 1,
+      "pageUrl": "",
+      "seoTitle": "Gita for Beginners | RAM",
+      "seoDescription": "Discover the Bhagavad Gita through accessible readings and practical reflection."
+    },
+    {
+      "id": "emotional-intelligence",
+      "initiative": "RAM",
+      "title": "Gita for Emotional Intelligence",
+      "slug": "gita-for-emotional-intelligence",
+      "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "A person practicing quiet reflection outdoors",
+      "shortDescription": "Cultivate self-awareness and bring a thoughtful perspective to your emotions.",
+      "fullDescription": "Reflect on attention, choice and relationships through Gita-based discussion and everyday exercises. Sessions encourage a compassionate approach to ourselves and others.",
+      "category": "Personal Development",
+      "audience": "Adults",
+      "featured": true,
+      "active": true,
+      "displayOrder": 2,
+      "pageUrl": "",
+      "seoTitle": "Gita for Emotional Intelligence | RAM",
+      "seoDescription": "A values-based learning program for self-awareness and thoughtful relationships."
+    },
+    {
+      "id": "youth-leadership",
+      "initiative": "RAM",
+      "title": "Youth Leadership",
+      "slug": "youth-leadership",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "A group of young people spending time together outdoors",
+      "shortDescription": "Help young people lead with confidence, responsibility and care.",
+      "fullDescription": "A collaborative learning experience focused on communication, responsibility and service. Participants practice listening, teamwork and leadership through discussion and group activities.",
+      "category": "Leadership",
+      "audience": "Youth",
+      "featured": true,
+      "active": true,
+      "displayOrder": 3,
+      "pageUrl": "",
+      "seoTitle": "Youth Leadership | RAM",
+      "seoDescription": "Explore values-based leadership, teamwork and communication for youth."
+    },
+    {
+      "id": "communication",
+      "initiative": "RAM",
+      "title": "Communication to Connect",
+      "slug": "communication-to-connect",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "People in conversation around a table",
+      "shortDescription": "Listen with attention. Speak with clarity. Connect with kindness.",
+      "fullDescription": "Practice active listening, thoughtful expression and constructive dialogue. Learning activities connect communication skills with empathy and practical values.",
+      "category": "Communication",
+      "audience": "Ages 16+",
+      "featured": true,
+      "active": false,
+      "displayOrder": 4,
+      "pageUrl": "",
+      "seoTitle": "Communication to Connect | RAM",
+      "seoDescription": "Build listening and communication skills guided by clarity and kindness."
+    },
+    {
+      "id": "gita-relationships",
+      "initiative": "RAM",
+      "title": "Gita for Relationships",
+      "slug": "gita-for-relationships",
+      "image": "/images/hero-riverside-diya.png",
+      "imageAlt": "A peaceful setting for reflection",
+      "shortDescription": "Bring empathy, patience and shared values into your relationships.",
+      "fullDescription": "Explore how listening, compassion and thoughtful action can shape family and community relationships. Guided discussion connects timeless teachings with situations in everyday life.",
+      "category": "Gita Programs",
+      "audience": "Parents",
+      "featured": false,
+      "active": true,
+      "displayOrder": 5,
+      "pageUrl": "",
+      "seoTitle": "Gita for Relationships | RAM",
+      "seoDescription": "Reflect on empathy, patience and shared values in everyday relationships."
+    },
+    {
+      "id": "programs-0286fd66-7284-4aa3-95ec-27cb6ad8ef78",
+      "initiative": "RAM",
+      "title": "New RAM Program",
+      "slug": "programs-0286fd66-7284-4aa3-95ec-27cb6ad8ef78",
+      "image": "",
+      "imageAlt": "",
+      "shortDescription": "",
+      "fullDescription": "",
+      "category": "Personal Development",
+      "audience": "Adults",
+      "featured": false,
+      "active": true,
+      "displayOrder": 6,
+      "pageUrl": "",
+      "seoTitle": "",
+      "seoDescription": ""
+    }
+  ],
+  "opportunitiesHeading": "Find Open Programs",
+  "opportunitiesIntro": "Explore and register for upcoming programs, join waitlists or express future interest.",
+  "opportunities": [
+    {
+      "id": "gita-fall-2026",
+      "programId": "gita-beginners",
+      "name": "Gita for Beginners - Fall 2026",
+      "registrationType": "OPEN_REGISTRATION",
+      "status": "OPEN_REGISTRATION",
+      "image": "",
+      "imageAlt": "",
+      "description": "An 8-week journey into the timeless wisdom of the Bhagavad Gita.",
+      "startDate": "2026-12-10",
+      "endDate": "2027-01-28",
+      "timezone": "America/Los_Angeles",
+      "location": "Online",
+      "format": "Online",
+      "audience": "Ages 15+",
+      "ageRange": "15+",
+      "schedule": "Weekly sessions; timing will be shared by the team.",
+      "formId": "form-gita-fall",
+      "opensAt": "",
+      "closesAt": "",
+      "displayOnRamPage": true,
+      "featured": false,
+      "displayOrder": 1,
+      "buttonLabel": "Register Now",
+      "seoTitle": "",
+      "seoDescription": "",
+      "success": {
+        "heading": "Registration Received!",
+        "message": "Thank you for registering for Gita for Beginners.",
+        "nextStepsHeading": "Next Steps",
+        "nextSteps": "Our team will share the session schedule and participation details by email.",
+        "primaryEnabled": false,
+        "primaryLabel": "",
+        "primaryUrl": "",
+        "secondaryEnabled": false,
+        "secondaryLabel": "",
+        "secondaryUrl": "",
+        "calendar": true,
+        "calendarLabel": "Add to Calendar",
+        "showGroup": false,
+        "groupLabel": "Join Participant Group",
+        "groupUrl": "",
+        "showContact": true,
+        "contactLabel": "Contact Us",
+        "showRelated": true,
+        "relatedLabel": "Explore the Program",
+        "showClose": true
+      }
+    },
+    {
+      "id": "youth-waitlist",
+      "programId": "youth-leadership",
+      "name": "Youth Leadership Workshop",
+      "registrationType": "OPEN_WAITLIST",
+      "status": "OPEN_WAITLIST",
+      "image": "",
+      "imageAlt": "",
+      "description": "Grow together through teamwork, thoughtful communication and service.",
+      "startDate": "2027-01-15",
+      "endDate": "2027-02-20",
+      "timezone": "America/Los_Angeles",
+      "location": "Location to be announced",
+      "format": "In Person",
+      "audience": "Youth",
+      "ageRange": "13-18",
+      "schedule": "Workshop details will be shared with the waitlist.",
+      "formId": "form-youth-waitlist",
+      "opensAt": "",
+      "closesAt": "",
+      "displayOnRamPage": true,
+      "featured": false,
+      "displayOrder": 2,
+      "buttonLabel": "Join Waitlist",
+      "seoTitle": "",
+      "seoDescription": "",
+      "success": {
+        "heading": "Waitlist Request Received!",
+        "message": "Thank you for your interest in Youth Leadership.",
+        "nextStepsHeading": "Next Steps",
+        "nextSteps": "We will contact you when more details or places are available.",
+        "primaryEnabled": false,
+        "primaryLabel": "",
+        "primaryUrl": "",
+        "secondaryEnabled": false,
+        "secondaryLabel": "",
+        "secondaryUrl": "",
+        "calendar": false,
+        "calendarLabel": "Add to Calendar",
+        "showGroup": false,
+        "groupLabel": "Join Participant Group",
+        "groupUrl": "",
+        "showContact": true,
+        "contactLabel": "Contact Us",
+        "showRelated": true,
+        "relatedLabel": "Explore the Program",
+        "showClose": true
+      }
+    },
+    {
+      "id": "communication-interest",
+      "programId": "communication",
+      "name": "Communication to Connect",
+      "registrationType": "FUTURE_INTEREST",
+      "status": "FUTURE_INTEREST",
+      "image": "",
+      "imageAlt": "",
+      "description": "Express your interest and hear about the next learning opportunity.",
+      "startDate": "",
+      "endDate": "",
+      "timezone": "America/Los_Angeles",
+      "location": "Online",
+      "format": "Online",
+      "audience": "Ages 16+",
+      "ageRange": "16+",
+      "schedule": "Future session",
+      "formId": "form-communication-interest",
+      "opensAt": "",
+      "closesAt": "",
+      "displayOnRamPage": true,
+      "featured": false,
+      "displayOrder": 3,
+      "buttonLabel": "I'm Interested",
+      "seoTitle": "",
+      "seoDescription": "",
+      "success": {
+        "heading": "Thank You for Your Interest!",
+        "message": "You have expressed interest in Communication to Connect.",
+        "nextStepsHeading": "Next Steps",
+        "nextSteps": "We will share details when a new session is available.",
+        "primaryEnabled": false,
+        "primaryLabel": "",
+        "primaryUrl": "",
+        "secondaryEnabled": false,
+        "secondaryLabel": "",
+        "secondaryUrl": "",
+        "calendar": false,
+        "calendarLabel": "Add to Calendar",
+        "showGroup": false,
+        "groupLabel": "Join Participant Group",
+        "groupUrl": "",
+        "showContact": true,
+        "contactLabel": "Contact Us",
+        "showRelated": true,
+        "relatedLabel": "Explore the Program",
+        "showClose": true
+      }
+    },
+    {
+      "id": "opportunities-4d5bd725-0ab6-4b0c-b33d-e5449ff1d796",
+      "programId": "programs-0286fd66-7284-4aa3-95ec-27cb6ad8ef78",
+      "name": "NEW RAM Program",
+      "registrationType": "OPEN_REGISTRATION",
+      "status": "OPEN_REGISTRATION",
+      "image": "",
+      "imageAlt": "",
+      "description": "",
+      "startDate": "",
+      "endDate": "",
+      "timezone": "America/Los_Angeles",
+      "location": "Online",
+      "format": "Online",
+      "audience": "Adults",
+      "ageRange": "",
+      "schedule": "",
+      "formId": "form-a87a6358-ffd3-4469-ab08-b14a739b975f",
+      "opensAt": "",
+      "closesAt": "",
+      "displayOnRamPage": true,
+      "featured": false,
+      "displayOrder": 4,
+      "buttonLabel": "Register Now",
+      "seoTitle": "",
+      "seoDescription": "",
+      "success": {
+        "heading": "Registration Received!",
+        "message": "Thank you for registering for Gita for Beginners.",
+        "nextStepsHeading": "Next Steps",
+        "nextSteps": "Our team will share the session schedule and participation details by email.",
+        "primaryEnabled": false,
+        "primaryLabel": "",
+        "primaryUrl": "",
+        "secondaryEnabled": false,
+        "secondaryLabel": "",
+        "secondaryUrl": "",
+        "calendar": true,
+        "calendarLabel": "Add to Calendar",
+        "showGroup": false,
+        "groupLabel": "Join Participant Group",
+        "groupUrl": "",
+        "showContact": true,
+        "contactLabel": "Contact Us",
+        "showRelated": true,
+        "relatedLabel": "Explore the Program",
+        "showClose": true
+      }
+    }
+  ],
+  "forms": [
+    {
+      "id": "form-gita-fall",
+      "name": "Gita for Beginners Registration",
+      "heading": "Register for Gita for Beginners",
+      "description": "Fall 2026 Batch",
+      "submitLabel": "Complete Registration",
+      "questions": [
+        {
+          "id": "name",
+          "type": "shortText",
+          "label": "Full Name",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "email",
+          "type": "email",
+          "label": "Email",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "city",
+          "type": "shortText",
+          "label": "City / State",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "phone",
+          "type": "phone",
+          "label": "Phone",
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "age",
+          "type": "number",
+          "label": "Age",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "referral",
+          "type": "dropdown",
+          "label": "How did you hear about us?",
+          "options": [
+            "Friend or family",
+            "Social media",
+            "GOPAL Foundation",
+            "Other"
+          ],
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "goals",
+          "type": "longText",
+          "label": "What would you like to learn?",
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "consent",
+          "type": "consent",
+          "label": "I consent to being contacted about this program and the use of my information for registration.",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "question-b8a0655a-0313-4202-8c45-36faa0c59181",
+          "label": "New Question",
+          "type": "shortText",
+          "required": false,
+          "enabled": true,
+          "placeholder": "",
+          "description": "",
+          "options": []
+        }
+      ],
+      "success": {
+        "heading": "Registration Received!",
+        "message": "Thank you for registering for Gita for Beginners.",
+        "nextSteps": "Our team will share the session schedule and participation details by email.",
+        "groupLabel": "Join Participant Group",
+        "groupUrl": "",
+        "calendar": true,
+        "relatedLabel": "Explore the Program",
+        "contactLabel": "Contact Us",
+        "actions": []
+      }
+    },
+    {
+      "id": "form-youth-waitlist",
+      "name": "Youth Leadership Waitlist",
+      "heading": "Join the Youth Leadership Waitlist",
+      "description": "Leave your details to hear when a place becomes available.",
+      "submitLabel": "Join Waitlist",
+      "questions": [
+        {
+          "id": "name",
+          "type": "shortText",
+          "label": "Full Name",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "email",
+          "type": "email",
+          "label": "Email",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "phone",
+          "type": "phone",
+          "label": "Phone",
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "age",
+          "type": "number",
+          "label": "Age",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "city",
+          "type": "shortText",
+          "label": "City",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "note",
+          "type": "longText",
+          "label": "Optional Note",
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "consent",
+          "type": "consent",
+          "label": "I consent to being contacted about this waitlist.",
+          "required": true,
+          "enabled": true
+        }
+      ],
+      "success": {
+        "heading": "Waitlist Request Received!",
+        "message": "Thank you for your interest in Youth Leadership.",
+        "nextSteps": "We will contact you when more details or places are available.",
+        "groupLabel": "",
+        "groupUrl": "",
+        "calendar": false,
+        "relatedLabel": "Explore the Program",
+        "contactLabel": "Contact Us",
+        "actions": []
+      }
+    },
+    {
+      "id": "form-communication-interest",
+      "name": "Communication Future Interest",
+      "heading": "Stay Informed About Communication to Connect",
+      "description": "Hear about future sessions.",
+      "submitLabel": "Notify Me About Future Sessions",
+      "questions": [
+        {
+          "id": "name",
+          "type": "shortText",
+          "label": "Full Name",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "email",
+          "type": "email",
+          "label": "Email",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "city",
+          "type": "shortText",
+          "label": "City",
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "consent",
+          "type": "consent",
+          "label": "I consent to receiving updates about this program.",
+          "required": true,
+          "enabled": true
+        }
+      ],
+      "success": {
+        "heading": "Thank You for Your Interest!",
+        "message": "You have expressed interest in Communication to Connect.",
+        "nextSteps": "We will share details when a new session is available.",
+        "groupLabel": "",
+        "groupUrl": "",
+        "calendar": false,
+        "relatedLabel": "Explore the Program",
+        "contactLabel": "Contact Us",
+        "actions": []
+      }
+    },
+    {
+      "id": "form-a87a6358-ffd3-4469-ab08-b14a739b975f",
+      "name": "New RSVP Form",
+      "heading": "Register for Gita for Beginners",
+      "description": "Fall 2026 Batch",
+      "submitLabel": "Complete Registration",
+      "questions": [
+        {
+          "id": "name",
+          "type": "shortText",
+          "label": "Full Name",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "email",
+          "type": "email",
+          "label": "Email",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "city",
+          "type": "shortText",
+          "label": "City / State",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "phone",
+          "type": "phone",
+          "label": "Phone",
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "age",
+          "type": "number",
+          "label": "Age",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "referral",
+          "type": "dropdown",
+          "label": "How did you hear about us?",
+          "options": [
+            "Friend or family",
+            "Social media",
+            "GOPAL Foundation",
+            "Other"
+          ],
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "goals",
+          "type": "longText",
+          "label": "What would you like to learn?",
+          "required": false,
+          "enabled": true
+        },
+        {
+          "id": "consent",
+          "type": "consent",
+          "label": "I consent to being contacted about this program and the use of my information for registration.",
+          "required": true,
+          "enabled": true
+        },
+        {
+          "id": "question-b8a0655a-0313-4202-8c45-36faa0c59181",
+          "label": "New Question",
+          "type": "shortText",
+          "required": false,
+          "enabled": true,
+          "placeholder": "",
+          "description": "",
+          "options": []
+        }
+      ],
+      "success": {
+        "heading": "Registration Received!",
+        "message": "Thank you for registering for Gita for Beginners.",
+        "nextSteps": "Our team will share the session schedule and participation details by email.",
+        "groupLabel": "Join Participant Group",
+        "groupUrl": "",
+        "calendar": true,
+        "relatedLabel": "Explore the Program",
+        "contactLabel": "Contact Us",
+        "actions": []
+      }
+    }
+  ],
+  "videosHeading": "Latest from RAM",
+  "videosIntro": "Conversations and reflections for thoughtful living.",
+  "videoSettings": {
+    "channelUrl": "https://www.youtube.com/@GOPALRAGHAV-RAM",
+    "channelId": "UCG_Yw9L5TGukTabIdhO5vFQ",
+    "automatic": true,
+    "count": 4,
+    "featuredMode": "AUTO_LATEST",
+    "featuredId": "videos-96b6a602-da8c-4d9c-92c8-a08ab096815b",
+    "showChannelButton": true,
+    "channelButtonLabel": "View RAM YouTube Channel"
+  },
+  "videos": [
+    {
+      "id": "yt-j_iTydBMAqA",
+      "url": "https://www.youtube.com/watch?v=j_iTydBMAqA",
+      "title": "भगवान कर्म करवाते हैं क्या ? Part 2 | Gita Ch 5, Shlok 14 | Gita Gosthi 27th Sep 2025",
+      "description": "Welcome to Gita Gosthi! In this session, we dive deeper into Chapter 5, Verse 14 of the Bhagavad Gita to address the profound question: \"Does God make us act?\" (भगवान कर्म करवाते हैं क्या ? - Part 2)\n\n🌸 About this Video:\nIn Bhagavad Gita Chapter 5, Shlok 14, Lord Krishna clarifies the nature of action, agency, and doership (Kartritva). Learn about how divine nature, material modes (Gunas), and individual samskaras drive human actions, and why God remains a neutral witness.\n\n📖 Key Highlights:\n- Explanation of Bhagavad Gita Ch 5, Shlok 14:\n  \"न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः |\n   न कर्मफलसंयोगं स्वभावस्तु प्रवर्तते ||\"\n- Understanding Doership (Kartritva) vs. Neutral Witness (Sakshi)\n- How Svabhava (nature/samskaras) drives human actions\n- Resolving the misconception about God's role in our karma and fruits of action\n\n⏰ Timestamps:\n00:00 - Introduction & Recap of Part 1\n05:00 - Recitation of Gita Ch 5, Shlok 14\n12:30 - Detailed Explanation: \"न कर्तृत्वं न कर्माणि\"\n25:15 - What is 'Svabhava' (स्वभावस्तु प्रवर्तते)?\n40:00 - Does God reward or punish us?\n55:20 - Q&A / Group Discussion (Gita Gosthi)\n01:15:00 - Key Takeaways & Concluding Remarks\n\n📚 Playlists:\n- Bhagvad Gita Chapter 5 Series: https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID\n\n🔔 Subscribe to Ritambhar Academy of Mind for more insightful discourses and Gita discussions!\n\n#BhagavadGita #GitaGosthi #BhagavadGitaChapter5 #GitaShlok14 #Karma #RitambharAcademy #SpiritualWisdom",
+      "thumbnail": "",
+      "publishedAt": "2026-10-01T11:00:14+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 1
+    },
+    {
+      "id": "yt-YmU7HNvwt0I",
+      "url": "https://www.youtube.com/watch?v=YmU7HNvwt0I",
+      "title": "नाम डोर है, भगवान पतंग! 🪁 Secret of Naam Jap",
+      "description": "भगवान का नाम जपने से Actually होता क्या है ? From Gita chapter 8 अगर आपने भगवान को देखा नहीं है, तो उनका ध्यान कैसे लगाएं? रामचरितमानस और संतों के अनुसार, इसका सबसे बड़ा रहस्य भगवान के \"नाम\" में छिपा है!\n\nइस #GitaOnTheGo वीडियो में जानिए कि भगवान का 'नाम' और उनके 'रूप' का आपस में क्या संबंध है। जैसे पतंग को डोर से खींचा जाता है, वैसे ही भगवान के रूप को उनके नाम की डोर से बांधा जा सकता है। जानिए भक्त शिरोमणि मीराबाई का वह रहस्य, जिन्होंने दीक्षा में 'राम' नाम पाया, लेकिन दर्शन 'गिरधर गोपाल' के किए और अंत में 'द्वारकाधीश' में विलीन हो गईं। समझिए कि कैसे केवल नाम जपने से भगवान की लीलाओं में प्रवेश पाया जा सकता है।\n\nक्या आप भी रोज़ नाम जप करते हैं? कमेंट्स में अपना अनुभव बताएं! गीता और संतों के ऐसे ही अनमोल विचारों के लिए वीडियो को Like और चैनल को Subscribe करना न भूलें।\n\n[Key Moments]\n0:00 - नाम और रूप का गहरा संबंध (The Name & The Form)\n0:42 - डोर और पतंग का सटीक उदाहरण 🪁\n1:46 - मीराबाई का सबसे बड़ा रहस्य: जपा 'राम', मिले 'कृष्ण'\n2:48 - नाम जपने से भगवान की लीला में प्रवेश कैसे होता है?\n\n#GitaOnTheGo #NaamJap #Mirabai #KrishnaBhakti #RamNaam #SpiritualAwakening #Hinduism #SanatanDharma #GeetaGyan #Devotion\n\n🔗 Connect & Subscribe\nSubscribe to Ritambhar Academy of Mind for regular Gita discourses and wisdom sessions.",
+      "thumbnail": "",
+      "publishedAt": "2026-09-30T15:00:03+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 2
+    },
+    {
+      "id": "yt-B7wDzmNjtTA",
+      "url": "https://www.youtube.com/watch?v=B7wDzmNjtTA",
+      "title": "भगवान कर्म करवाते हैं क्या ? Part 1 | Gita Ch 5, Shlok 14 | Gita Gosthi 20th Sep 2025",
+      "description": "क्या ईश्वर हमसे कर्म करवाते हैं? क्या मनुष्य के अच्छे और बुरे कर्मों का कर्ता भगवान है? \n\nश्रीमद्भगवद्गीता के अध्याय 5 (कर्मसंन्यास योग), श्लोक 14 के इस विशेष व्याख्यान (Gita Gosthi Part 1) में हम गहराई से समझेंगे कि भगवान, मनुष्य और कर्म के बीच क्या संबंध है।\n\nश्रीमद्भगवद्गीता (अध्याय 5, श्लोक 14):\nन कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः।\nन कर्मफलसंयोगं स्वभावस्तु प्रवर्तते॥\n\n📌 इस वीडियो में चर्चा किए गए मुख्य बिंदु:\n• क्या भगवान हमारे कर्मों के उत्तरदायी हैं?\n• 'कर्तृत्व' और 'स्वभाव' का वास्तविक अर्थ।\n• मनुष्य के अपने कर्म और उनके फलों का नियम।\n• गीता के दृष्टिकोण से जीवन मार्गदर्शन।\n\n⏱️ TIMESTAMPS / CHAPTERS:\n00:00 - मंगलाचरण एवं विषय परिचय (Introduction)\n05:00 - भगवद्गीता अध्याय 5, श्लोक 14 का पाठ एवं अर्थ\n15:00 - क्या भगवान कर्म और कर्तृत्व की रचना करते हैं?\n30:00 - 'स्वभावस्तु प्रवर्तते' - प्रकृति और स्वभाव का प्रभाव\n45:00 - कर्म सिद्धांत और ईश्वर की भूमिका\n1:05:00 - गीता गोष्ठी प्रश्नोत्तर एवं विचार विमर्श (Q&A Session)\n1:25:00 - निष्कर्ष एवं आगामी भाग की जानकारी (Conclusion)\n\n---\n\n🔔 Ritambhar Academy of Mind को Subscribe करें और भगवद्गीता के व्यावहारिक ज्ञान से जुड़ें!\n👍 यदि यह सत्र आपके लिए उपयोगी रहा, तो वीडियो को Like और Share करना न भूलें।\n\n#BhagavadGita #GitaGosthi #GitaChapter5 #Shlok14 #RitambharAcademy #SpiritualWisdom #KarmaTheory",
+      "thumbnail": "",
+      "publishedAt": "2026-09-30T11:00:09+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 3
+    },
+    {
+      "id": "yt-uTN_311Tszs",
+      "url": "https://www.youtube.com/watch?v=uTN_311Tszs",
+      "title": "भगवान की याद क्यों नहीं आती? ❌ (The Bitter Truth)",
+      "description": "हम बच्चों को, पैसों को या अपने पसंदीदा खाने को याद करने का रिमाइंडर नहीं लगाते, वो हमें अपने आप याद आते हैं। फिर भगवान को याद करने के लिए हमें मेहनत क्यों करनी पड़ती है?\n\nइस #GitaOnTheGo वीडियो में जानिए कि बाहर की जाने वाली क्रियाओं (जैसे नाम जप, माला, सत्संग) और मन के भीतर चलने वाले स्मरण (चिंतन) में क्या अंतर है। भगवद गीता के अनुसार, हमारे सारे पूजा-पाठ का एक ही अंतिम लक्ष्य है: भगवान का सहज स्मरण (Maa Manusmara)। समझिए कि कैसे लगातार अभ्यास से ईश्वर की याद हमारे मन में वैसी ही स्वाभाविक हो सकती है जैसी हमारी दुनियावी चीज़ों के प्रति आसक्ति है।\n\nअगर भजन करते समय आपका भी मन भटकता है, तो यह वीडियो आपके लिए है। इसे अपने मित्रों के साथ शेयर करें और ऐसी ही जीवन बदलने वाली गीता की सीख के लिए चैनल को Subscribe करें!\n\n[Key Moments]\n0:00 - नाम जप और मन के विचारों में क्या अंतर है?\n1:01 - भगवान का स्मरण कैसे करें? (रूप, गुण, लीला)\n1:55 - बोलकर नाम जप (वैखरी) करने का असली फल\n3:03 - बच्चों और पैसों की याद क्यों नहीं भूलती? (The Attachment Test)\n4:26 - गीता का मुख्य लक्ष्य: सहज ईश्वर स्मरण\n\n#GitaOnTheGo #BhagavadGita #NaamJap #SpiritualAwakening #KrishnaBhakti #MindControl #Hinduism #SanatanDharma #GeetaGyan #motivation \n\n🔗 Connect & Subscribe\nSubscribe to Ritambhar Academy of Mind for regular Gita discourses and wisdom sessions.",
+      "thumbnail": "",
+      "publishedAt": "2026-09-29T15:00:17+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 4
+    },
+    {
+      "id": "yt-16Gq-h9OQEM",
+      "url": "https://www.youtube.com/watch?v=16Gq-h9OQEM",
+      "title": "समदर्शन| Gita Ch 5, Shlok 18 | Gita Gosthi 4th Oct 2025",
+      "description": "🌸 Welcome to Ritambhar Academy of Mind (RAM) — your home for Bhagavad Gita, Vedic Wisdom, and Conscious Leadership.\n\nIn this Gita Gosthi session, we explore the profound spiritual concept of **Samadarshan (समदर्शन)** from **Chapter 5, Verse 18** of the Bhagavad Gita. Discover how true wisdom enables us to see the same divine essence in all beings—equally and without bias—and how to apply this vision in modern daily life.\n\n📌 CHAPTERS / TIMESTAMPS:\n00:00 - Introduction & Recitation of Gita Ch 5, Shlok 18\n05:00 - Word-by-Word Meaning & Translation (विद्याविनयसंपन्ने...)\n15:00 - The Concept of Samadarshan (Equal Vision across all beings)\n30:00 - Practical Application in Daily Life & Leadership\n42:00 - Q&A, Key Takeaways & Closing Thoughts\n\n✨ Key Verse Covered:\nविद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि ।\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः ॥ (५.१८)\n\n🚀 ABOUT RITAMBHAR ACADEMY OF MIND:\nOur Weekly Free Gita Sessions and Vedic knowledge courses are designed to help you navigate modern life with clarity, resilience, and purpose.\n\nWhat You Will Find Here:\n🎁 Weekly Free Gita Sessions (Open to all ages)\n🎯 Leadership & Communication using Vedic Principles\n🧘 Self-Development, Mental Clarity & Inner Peace\n💼 Career & Life Coaching grounded in Ancient Wisdom\n\n🔔 Subscribe and hit the bell icon to join our next Weekly Free Gita Session!\n\n#BhagavadGita #GitaGosthi #Samadarshan #Chapter5Shlok18 #VedicWisdom #RitambharAcademy #ConsciousLeadership #SelfDevelopment",
+      "thumbnail": "",
+      "publishedAt": "2026-09-29T11:00:06+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 5
+    },
+    {
+      "id": "yt-HH2Slm5yfy8",
+      "url": "https://www.youtube.com/watch?v=HH2Slm5yfy8",
+      "title": "इतनी भक्ति के बाद भी संत क्यों बने हिरण? 🦌",
+      "description": "इतनी भक्ति के बाद भी संत क्यों बने हिरण? 🦌 From Gita Chapter 8\n\nक्या आप भी सोचते हैं कि ईश्वर की भक्ति बुढ़ापे या रिटायरमेंट के बाद करेंगे? मृत्यु का कोई भरोसा नहीं है। गीता का यह रहस्य आपके जीने का नज़रिया बदल देगा!\n\nइस वीडियो में हम जानेंगे कि मृत्यु के समय हमारे विचार कैसे हमारे अगले जन्म को तय करते हैं। जड़ भरत जी की कहानी के माध्यम से समझिए कि कैसे अंत समय में एक हिरण का विचार आने पर उन्हें अगला जन्म हिरण का लेना पड़ा। भगवान कृष्ण भगवद गीता में कहते हैं \"तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च\" (इसलिए हर समय मेरा स्मरण करो और अपना कर्म/युद्ध करो)। जानिए कैसे हम अपने रोज़मर्रा के कामों को करते हुए भी ईश्वर से जुड़े रह सकते हैं।\n\n[Key Moments / Timestamps]\n0:00 - अंत समय और हमारी गति (Life After Death)\n0:24 - जड़ भरत जी की हैरान करने वाली कहानी 🦌\n1:47 - क्या हमारी की गई भक्ति व्यर्थ जाती है?\n2:37 - क्या हमें पता है मृत्यु कब आएगी? (The Harsh Reality)\n3:51 - भगवान कृष्ण का सबसे शक्तिशाली संदेश (Gita Shloka)\n\n#BhagavadGita #LifeAfterDeath #SpiritualAwakening #JadBharat #karma  #KrishnaUpdesh #Hinduism #SanatanDharma #Motivation #geetagyan #GitaOnTheGo\n\n🔔 Subscribe to Ritambhar Academy of Mind for more insightful discourses on Bhagavad Gita and Spiritual Wisdom!",
+      "thumbnail": "",
+      "publishedAt": "2026-09-29T04:11:31+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 6
+    },
+    {
+      "id": "yt-R5D7gZ8BdNY",
+      "url": "https://www.youtube.com/watch?v=R5D7gZ8BdNY",
+      "title": "शांति का रहस्य | Gita Ch 5, Shlok 29 | Gita Gosthi 11th Oct 2025",
+      "description": "श्रीमद्भगवद्गीता के अध्याय 5 (कर्मसंन्यासयोग) के श्लोक 29 में भगवान श्रीकृष्ण शांति का परम रहस्य बताते हैं। इस विशेष 'Gita Gosthi' सत्र में जानिए कि कैसे भगवान को सर्वलोक महेश्वर, सभी यज्ञों और तपस्याओं का भोक्ता, और समस्त प्राणियों का निस्वार्थ मित्र (सुहृद्) मानकर वास्तविक और स्थायी शांति प्राप्त की जा सकती है।\n\nइस वीडियो में चर्चा किए गए मुख्य विषय:\n• भोक्तारं यज्ञतपसां (Bhoktaram Yajna Tapsam)\n• सर्वलोकमहेश्वरम् (Sarva Loka Maheshwaram)\n• सुहृदं सर्वभूतानां (Suhridam Sarva Bhutanam)\n• शांति की प्राप्ति का मार्ग (Path to Eternal Peace)\n\n📌 Timestamps / समय सारणी:\n00:00 - Introduction & Chapter 5 Overview | परिचय एवं अध्याय 5 का सार\n05:00 - Shlok 29 Recitation & Meaning | श्लोक 29 का पाठ एवं अर्थ\n15:00 - The Concept of Ultimate Peace | वास्तविक शांति का रहस्य\n30:00 - Understanding God as the Enjoyer & Controller | ईश्वर ही सर्वेश्वर और भोक्ता हैं\n45:00 - Detailed Discussion & Q&A | विस्तृत चर्चा एवं शंका समाधान\n1:05:00 - Practical Application in Daily Life | व्यावहारिक जीवन में श्लोक 29 का प्रयोग\n1:18:00 - Conclusion & Closing Thoughts | निष्कर्ष एवं समापन\n\n---\n🔔 Subscribe to Ritambhar Academy of Mind for more insightful discourses on Bhagavad Gita and Spiritual Wisdom!\n\n#BhagavadGita #GitaGosthi #Chapter5Shlok29 #ShantiKaRahasya #SpiritualWisdom #RitambharAcademy #KrishnaTeachings #GitaInHindi",
+      "thumbnail": "",
+      "publishedAt": "2026-09-27T11:00:05+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 7
+    },
+    {
+      "id": "yt-Xm51yh5U8ZM",
+      "url": "https://www.youtube.com/watch?v=Xm51yh5U8ZM",
+      "title": "हमारा शत्रु और मित्र कौन हैं ? | Gita Ch 6, Shlok 5 | Gita Gosthi 18th Oct 2025",
+      "description": "Welcome to Ritambhar Academy of Mind (RAM), your home for the Bhagavad Gita, Vedic Wisdom, and Conscious Leadership.\n\nIn this insightful Gita Gosthi session, we dive into Bhagavad Gita Chapter 6, Verse 5 (Shlok 5):\n\n\"उद्धरेदात्मनात्मानं नात्मानमवसादयेत् |\nआत्मैव ह्यात्मनो बंधुरात्मैव रिपुरात्मनः ||\"\n\nDiscover who our true friend and enemy are, and how we hold the power to elevate or degrade our own mind and life.\n\n📌 Timestamps:\n00:00 - Introduction & Welcome to Gita Gosthi\n05:00 - Recitation & Overview of Gita Chapter 6, Verse 5\n15:00 - Who is Our True Friend and Enemy?\n30:00 - How the Mind Acts as a Friend or Foe\n45:00 - Practical Takeaways for Mind Control & Self-Elevation\n1:10:00 - Q&A with Seekers & Closing Reflections\n\n🚀 Our Weekly Free Gita Sessions and Vedic knowledge courses are designed to help you navigate modern life with clarity and purpose.\n\nAt Ritambhar, we nurture resilient, purpose-driven individuals through life-changing sessions inspired by ancient Indian wisdom.\n\nWhat You Will Find Here:\n\n🎁 Weekly Free Gita Sessions: Join our global community for weekly Gita sessions open to all ages, from students to seekers.\n\n🎯 Leadership & Communication: Master your professional impact using timeless Vedic leadership principles.\n\n🧘 Self-Development & Confidence: Build a rock-solid inner foundation and overcome mental noise.\n\n💼 Career & Life Coaching: Get strategic guidance for meaningful success in your personal and professional life.\n\n⚖️ Decision-Making & Clarity: Learn to act with consciousness and character in high-stakes situations.\n\nWho Is This For? 🏛️\nWhether you are a student, working professional, or parent, our weekly sessions offer practical tools for anyone striving for meaningful success. All our core weekly Gita sessions are 100% free to ensure this wisdom reaches everyone.\n\nEmpowering Minds. Guiding Lives. ✨\n\nSubscribe and hit the bell 🔔 to join our next Weekly Free Gita Session!\n\n#BhagavadGita #GitaGosthi #SelfDevelopment #MindControl #VedicWisdom #RitambharAcademy #ConsciousLeadership",
+      "thumbnail": "",
+      "publishedAt": "2026-09-26T11:00:04+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 8
+    },
+    {
+      "id": "yt-xAWk7yRU0uI",
+      "url": "https://www.youtube.com/watch?v=xAWk7yRU0uI",
+      "title": "योगी कौन हैं? | Gita Chapter 6, Shlok 8, Gita Gosthi 25th Oct 2025",
+      "description": "योगी कौन हैं? | Gita Chapter 6, Shlok 8 | Gita Gosthi\n\nIn this session of Gita Gosthi (recorded on 25th Oct 2025), we delve into Chapter 6, Verse 8 (Shlok 8) of the Bhagavad Gita to understand the true attributes of a Yogi, the distinction between intellectual knowledge and experiential realization, and how to maintain mental equipoise amidst worldly dualities.\n\n📖 BHAGAVAD GITA CHAPTER 6, SHLOK 8:\n\nज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः।\nयुक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः॥ ८ ॥\n\n\"jñāna-vijñāna-tṛptātmā kūṭa-stho vijitendriyaḥ\nyukta ity ucyate yogī sama-loṣṭāśma-kāñcanaḥ\"\n\nTranslation & Verse Breakdown:\n• ज्ञान (Gyan): Acquiring spiritual knowledge from scripture and teachers.\n• विज्ञान (Vigyan): Direct personal realization and experiential wisdom.\n• तृप्तात्मा (Triptatma): Fully satisfied within the self through realization.\n• कूटस्थः (Kutastha): Unshakable and remaining steady amidst life’s ups and downs.\n• विजितेन्द्रियः (Vijitendriyah): Having full control over the senses and mind.\n• समलोष्टाश्मकाञ्चनः (Sama-loshtashma-kanchanah): Viewing a lump of earth, a stone, and gold with equal detachment.\n\nTranslation Summary:\nA person is said to be established in self-realization and is called a true Yogi when they are satisfied by both spiritual knowledge (Gyan) and realization (Vigyan). Such a person remains unshakeable, self-controlled, and regards dirt, stone, and gold with equal vision.\n\n⏱️ TIMESTAMPS:\n00:00 - Introduction & Opening Thoughts on Gita Gosthi\n02:15 - Chanting & Detailed Breakdown of Chapter 6, Shlok 8\n10:30 - Defining the True Yogi: Who is a 'Kutastha' & 'Vijitendriyah'?\n22:45 - The Difference Between Gyan (Theoretical Knowledge) & Vigyan (Experiential Wisdom)\n35:10 - Equal Vision: Understanding 'Sama-loshtashma-kanchanah' (Earth, Stone, and Gold)\n50:20 - Practical Applications for Daily Life, Work, and Mind Management\n1:05:00 - Q&A & Interactive Discussion with Seekers\n1:18:30 - Key Takeaways & Closing Remarks\n\n---\n\nWelcome to Ritambhar Academy of Mind (RAM), your home for the Bhagavad Gita, Vedic Wisdom, and Conscious Leadership. \n\n🚀 Our Weekly Free Gita Sessions and Vedic knowledge courses are designed to help you navigate modern life with clarity and purpose. \n\nAt Ritambhar, we nurture resilient, purpose-driven individuals through life-changing sessions inspired by ancient Indian wisdom.\n\nWhat You Will Find Here:\n🎁 Weekly Free Gita Sessions: Join our global community for weekly Gita sessions open to all ages, from students to seekers.\n🎯 Leadership & Communication: Master your professional impact using timeless Vedic leadership principles.\n🧘 Self-Development & Confidence: Build a rock-solid inner foundation and overcome mental noise.\n💼 Career & Life Coaching: Get strategic guidance for meaningful success in your personal and professional life.\n⚖️ Decision-Making & Clarity: Learn to act with consciousness and character in high-stakes situations.\n\nWho Is This For? 🏛️\nWhether you are a student, working professional, or parent, our weekly sessions offer practical tools for anyone striving for meaningful success. All our core weekly Gita sessions are 100% free to ensure this wisdom reaches everyone.\n\nEmpowering Minds. Guiding Lives. ✨\n\nSubscribe and hit the bell 🔔 to join our next Weekly Free Gita Session!\n\n#BhagavadGita #GitaChapter6 #Yogi #VedicWisdom #RitambharAcademy #ConsciousLeadership #SelfDevelopment #GitaGosthi #Shlok8 #Philosophy",
+      "thumbnail": "",
+      "publishedAt": "2026-09-25T11:00:34+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 9
+    },
+    {
+      "id": "yt-QWcWdV6E_Yc",
+      "url": "https://www.youtube.com/watch?v=QWcWdV6E_Yc",
+      "title": "ध्यान योग से परम शांति | Gita Ch 6, Shlok 15 | Gita Gosthi 1st Nov 2025",
+      "description": "Explore the path to ultimate peace through Dhyana Yoga in this detailed session on Bhagavad Gita Chapter 6, Verse 15 by Ritambhar Academy of Mind (RAM). Learn how controlling the mind and integrating spiritual practice into daily life leads to supreme peace and liberation (Nirvana).\n\n📖 SHLOK OF THE DAY:\nयुञ्जन्नेवं सदात्मानं योगी नियतमानसः ।\nशान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति ॥ १५ ॥\n\nYuñjann evaṁ sadātmānaṁ yogī niyatamānasaḥ |\nŚāntiṁ nirvāṇaparamāṁ matsaṁsthām adhigacchati || 15 ||\n\n⏱️ TIMESTAMPS:\n0:00 - Introduction & Recitation of Gita Ch 6, Shlok 15\n8:15 - Word-by-Word Sanskrit Meaning (Anvaya & Shabdartha)\n22:40 - Deep Dive: Controlling the Mind (Niyatamānasaḥ)\n41:10 - Understanding Supreme Peace (Śāntiṁ Nirvāṇaparamām)\n1:02:15 - Attaining the Divine State (Matsaṁsthām Adhigacchati)\n1:18:30 - Practical Applications of Dhyana Yoga in Daily Life\n1:28:00 - Gita Gosthi Interactive Discussion & Q&A\n1:35:10 - Summary & Concluding Mantras\n\n---------------------------------------------------\n\nWelcome to Ritambhar Academy of Mind (RAM), your home for the Bhagavad Gita, Vedic Wisdom, and Conscious Leadership. \n\n🚀 Our Weekly Free Gita Sessions and Vedic knowledge courses are designed to help you navigate modern life with clarity and purpose. \n\nAt Ritambhar, we nurture resilient, purpose-driven individuals through life-changing sessions inspired by ancient Indian wisdom.\n\nWhat You Will Find Here:\n🎁 Weekly Free Gita Sessions: Join our global community for weekly Gita sessions open to all ages, from students to seekers.\n🎯 Leadership & Communication: Master your professional impact using timeless Vedic leadership principles.\n🧘 Self-Development & Confidence: Build a rock-solid inner foundation and overcome mental noise.\n💼 Career & Life Coaching: Get strategic guidance for meaningful success in your personal and professional life.\n⚖️ Decision-Making & Clarity: Learn to act with consciousness and character in high-stakes situations.\n\nWho Is This For? 🏛️\nWhether you are a student, working professional, or parent, our weekly sessions offer practical tools for anyone striving for meaningful success. All our core weekly Gita sessions are 100% free to ensure this wisdom reaches everyone.\n\nEmpowering Minds. Guiding Lives. ✨\n\nSubscribe and hit the bell 🔔 to join our next Weekly Free Gita Session!",
+      "thumbnail": "",
+      "publishedAt": "2026-09-24T11:00:36+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 10
+    },
+    {
+      "id": "yt-yqZCS0bR1-k",
+      "url": "https://www.youtube.com/watch?v=yqZCS0bR1-k",
+      "title": "संतुलित जीवन कैसे जिए ? | Gita Chapter 6, Shlok 17 | Gita Gosthi 8th Nov 2025",
+      "description": "\"युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु। युक्तस्वप्नावबोधस्य योगो भवति दुःखहा॥\"\n\nIn Bhagavad Gita Chapter 6, Shlok 17, Lord Krishna provides the ultimate formula for living a balanced, stress-free life. Discover how regulating your diet, recreation, work habits, and sleep can eliminate suffering and bring true peace of mind.\n\nIn this insightful Gita Gosthi session hosted by Ritambhar Academy of Mind (RAM), we unpack ancient Vedic wisdom and apply it directly to modern life challenges.\n\n📌 Timestamps:\n\n00:00 - Introduction & Opening Prayers (मंगलाचरण)\n\n05:00 - Overview of Gita Chapter 6, Shlok 17\n\n12:30 - What is Yukta Ahara Vihara? (Balance in Eating & Recreation)\n\n25:15 - Yukta Chesta (Moderation in Work & Actions)\n\n40:00 - Yukta Swapnavabodha (Regulating Sleep & Mindful Awareness)\n\n55:20 - How Moderation Destroys Suffering (Duhkhaha)\n\n1:10:00 - Practical Application for Students, Professionals & Seekers\n\n1:20:00 - Q&A Session & Key Takeaways\n\n✨ About Ritambhar Academy of Mind (RAM):\nWelcome to RAM, your home for the Bhagavad Gita, Vedic Wisdom, and Conscious Leadership.\n\nOur weekly free Gita sessions and Vedic knowledge courses are designed to help you navigate modern life with clarity, purpose, and inner peace.\n\n🎯 What You Will Find Here:\n\n🎁 Weekly Free Gita Sessions: Open to all ages, students to seekers.\n\n🧘 Self-Development & Confidence: Build a solid inner foundation and overcome mental noise.\n\n💼 Career & Life Coaching: Strategic guidance for personal and professional success.\n\n⚖️ Conscious Decision-Making: Learn to act with character in high-stakes situations.\n\n🔔 Subscribe & Stay Connected:\nDon't forget to Like, Share, and Subscribe to join our next Weekly Free Gita Session!\n\n#BhagavadGita #GitaChapter6 #BalancedLife #VedicWisdom #RitambharAcademy #SelfImprovement #Mindfulness",
+      "thumbnail": "",
+      "publishedAt": "2026-09-23T11:00:26+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 11
+    },
+    {
+      "id": "yt-eg4mgSz2vPg",
+      "url": "https://www.youtube.com/watch?v=eg4mgSz2vPg",
+      "title": "पूर्णता की और | Gita Ch 6, Shlok 20 | Gita Gosthi 15th Nov 2025",
+      "description": "Welcome to Ritambhar Academy of Mind (RAM), your home for the Bhagavad Gita, Vedic Wisdom, and Conscious Leadership.\n\nIn this session of Gita Gosthi, we explore Bhagavad Gita Chapter 6, Verse 20 — diving deep into the concept of \"पूर्णता की ओर\" (Moving Towards Completeness/Perfection) and how controlling the mind through yoga leads to supreme inner satisfaction and self-realization.\n\n--------------------------------------------------\n📖 BHAGAVAD GITA CHAPTER 6, VERSE 20 (अध्याय 6, श्लोक 20)\n\nयत्रोपरमते चित्तं निरुद्धं योगसेवया।\nयत्र चैवात्मनात्मानं पश्यन्नात्मनि तुष्यति॥ २०॥\n\nTranslation & Meaning:\n\"In the state of perfection called samādhi, one's mind is completely restrained from material mental activities by the practice of yoga. This perfection is characterized by one's ability to see the self through the pure mind and to relish and rejoice within the Self.\"\n\n--------------------------------------------------\n⏱️ TIMESTAMPS / CHAPTER MARKERS:\n\n00:00 - Introduction & Opening Prayer (मंगलाचरण)\n05:00 - Recitation of Bhagavad Gita Chapter 6, Shlok 20\n12:30 - Word-by-Word Sanskrit Breakdown & Translation\n25:00 - Key Insights: The Quiet Mind & Inner Completion (पूर्णता)\n42:15 - Practical Application: Overcoming Distractions in Daily Life\n1:05:00 - Q&A with Seekers & Interactive Discussion\n1:20:00 - Summary & Concluding Thoughts\n\n--------------------------------------------------\n🚀 WHAT YOU WILL FIND HERE:\n\n• Weekly Free Gita Sessions: Join our global community for weekly Gita sessions open to all ages, from students to seekers.\n• Leadership & Communication: Master your professional impact using timeless Vedic leadership principles.\n• Self-Development & Confidence: Build a rock-solid inner foundation and overcome mental noise.\n• Career & Life Coaching: Get strategic guidance for meaningful success in your personal and professional life.\n• Decision-Making & Clarity: Learn to act with consciousness and character in high-stakes situations.\n\n--------------------------------------------------\n🏛️ WHO IS THIS FOR?\n\nWhether you are a student, working professional, or parent, our weekly sessions offer practical tools for anyone striving for meaningful success. All our core weekly Gita sessions are 100% free to ensure this wisdom reaches everyone.\n\nEmpowering Minds. Guiding Lives. ✨\n\n🔔 Subscribe and hit the notification bell to join our next Weekly Free Gita Session!\n\n#BhagavadGita #GitaGosthi #Chapter6 #Shlok20 #SelfRealization #Mindset #VedicWisdom #RitambharAcademy",
+      "thumbnail": "",
+      "publishedAt": "2026-09-22T21:00:15+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 12
+    },
+    {
+      "id": "yt-5VZkxcWnlus",
+      "url": "https://www.youtube.com/watch?v=5VZkxcWnlus",
+      "title": "कर्म योगी के लक्षण | Gita Ch 5, shlok 7| Gita Gosthi -12th Sep 2026",
+      "description": "जय श्रीकृष्ण! 🙏\n\nश्रीमद्भगवद्गीता के 5वें अध्याय के 7वें श्लोक में भगवान श्रीकृष्ण एक 'कर्मयोगी' के मुख्य लक्षणों और उसके स्वभाव का सुंदर वर्णन करते हैं। इस गोष्ठी में जानिए कि कैसे एक साधक अपने मन और इंद्रियों को वश में रखकर निष्काम कर्म के मार्ग पर आगे बढ़ सकता है।\n\n📖 Shlok / श्लोक:\nयोगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः।\n\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते॥ (५.७)\n\n📌 Timestamps / अध्याय:\n\n00:00 - परिचय एवं मंगलाचरण\n\n05:00 - भगवद्गीता अध्याय 5, श्लोक 7 का पाठ\n\n12:30 - कर्म योगी कौन है? (विशुद्धात्मा और विजितात्मा का अर्थ)\n\n25:00 - इंद्रिय निग्रह और आत्म-संयम\n\n40:00 - सर्वभूतात्मभूतात्मा: सभी प्राणियों में एक ही चेतना का अनुभव\n\n55:00 - 'कुर्वन्नपि न लिप्यते' - कर्म करते हुए भी बंधन से मुक्ति\n\n1:10:00 - प्रश्नोत्तरी एवं मुख्य निष्कर्ष (Q&A)\n\n🌸 Key Takeaways / मुख्य बातें:\n\nविशुद्धात्मा: शुद्ध अंतःकरण वाला व्यक्ति\n\nविजितात्मा & जितेन्द्रियः: मन और इंद्रियों को जीतने वाला\n\nसर्वभूतात्मभूतात्मा: सभी जीवों के साथ एकात्म भाव रखने वाला\n\n🔗 Join & Follow Us / हमसे जुड़ें:\n\nChannel: Ritambhar Academy of Mind\n\nPlaylist: Bhagvad Gita Chapter 5\n\n🔔 वीडियो को लाइक करें, शेयर करें और चैनल को सब्सक्राइब करना न भूलें!\n\n#BhagavadGita #GitaGosthi #KarmaYoga #GitaChapter5 #Shlok7 #RitambharAcademy",
+      "thumbnail": "",
+      "publishedAt": "2026-09-15T00:14:17+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 13
+    },
+    {
+      "id": "yt-Bd8xqNSK_9o",
+      "url": "https://www.youtube.com/watch?v=Bd8xqNSK_9o",
+      "title": "मरनेके पश्चात् हमारी कौन-सी गति होगी? Chapter 8, Shloks 23-25 - Sept 13, 2026",
+      "description": "इस विशेष सत्र में श्रीमद्भगवद्गीता के 8वें अध्याय (अक्षरब्रह्मयोग) के श्लोक 23 से 25 पर विस्तार से चर्चा की गई है। इसमें बताया गया है कि मृत्यु के समय जीव का भाव और साधना मार्ग किस प्रकार उसकी आगामी गति (उत्तरायण या दक्षिणायन) को निर्धारित करती है।\n\nश्लोक एवं अर्थ (Sanskrit Shloks & Meaning):\nश्लोक 23:\n\nयत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः।\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ॥\n\nअर्थ: हे भरतश्रेष्ठ! जिस समय में शरीर त्यागकर गए हुए योगी वापस न लौटने वाली गति (मुक्ति) को और वापस लौटने वाली गति (पुनर्जन्म) को प्राप्त होते हैं, उस समय (मार्ग) को मैं कहूँगा।\n\nश्लोक 24:\n\nअग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम्।\nतत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः॥\n\nअर्थ: ज्योतिर्मय अग्नि, दिन का प्रकाश, शुक्ल पक्ष और उत्तरायण के छः महीने—इस मार्ग से जाने वाले ब्रह्मवेत्ता ज्ञानी जन ब्रह्म को प्राप्त होते हैं।\n\nश्लोक 25:\n\nधूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम्।\nतत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते॥\n\nअर्थ: धुआँ, रात्रि, कृष्ण पक्ष और दक्षिणायन के छः महीने—इस मार्ग से जाने वाला सकाम कर्म करने वाला योगी चंद्रलोक की ज्योति को प्राप्त होकर पुनः लौट आता है।\n\nप्रमुख बिंदु (Key Highlights):\nअध्याय 8 (अक्षरब्रह्मयोग): मृत्यु के बाद आत्मा का मार्ग और उसकी गति।\n\nश्लोक 23: प्रयाण काल (मृत्यु के समय) योगियों के जाने के दो मुख्य मार्ग।\n\nश्लोक 24 (उत्तरायण/अर्चिरादि मार्ग): ज्ञान-मार्ग और परम गति (मुक्ति) की प्राप्ति।\n\nश्लोक 25 (दक्षिणायन/धूम मार्ग): कर्मकांडी/सकाम मार्ग और पुनर्जन्म का चक्र।\n\nसमय-सारणी (Timestamps):\n00:00 - मंगलाचरण, परिचय एवं पूर्व प्रसंग का पुनरावलोकन\n\n05:00 - श्लोक 23 व्याख्या: प्रयाण काल में योगियों की गति\n\n15:30 - श्लोक 24 व्याख्या: शुक्ल मार्ग (उत्तरायण) और मुक्ति का मार्ग\n\n30:00 - श्लोक 25 व्याख्या: कृष्ण मार्ग (दक्षिणायन) और पुनर्जन्म का चक्र\n\n45:00 - दोनों मार्गों की तुलना और व्यावहारिक सीख\n\n55:00 - निष्कर्ष, प्रश्नोत्तर एवं शांति पाठ\n\nचैनल से जुड़ें (Connect & Subscribe):\nChannel: Ritambhar Academy of Mind\n\nWatch Full Video: YouTube Video\n\nLike, Share, and Subscribe for more spiritual discourses!\n\n#BhagavadGita #Chapter8 #Shlok23to25 #SpiritualWisdom #RitambharAcademy",
+      "thumbnail": "",
+      "publishedAt": "2026-09-15T00:09:50+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 14
+    },
+    {
+      "id": "yt-mUzAQQ30OCw",
+      "url": "https://www.youtube.com/watch?v=mUzAQQ30OCw",
+      "title": "कौन हमारा उद्धार करेगा और कौन हमारा विनाश ? | Gita for Beginners | Sep 12th 2026",
+      "description": "भगवद्गीता के इस विशेष सत्र में आपका स्वागत है। इस वीडियो में हम समझेंगे कि वास्तव में हमारा उद्धारकर्ता कौन है और कौन हमारा विनाश करता है। क्या हम स्वयं अपने मित्र हैं या शत्रु? आइए गीता के शाश्वत ज्ञान के माध्यम से अपने मन, विचारों और कर्मों की सही दिशा को समझें।\n\nइस वीडियो में आप सीखेंगे:\n\nहमारे उद्धार और पतन का मूल कारण क्या है?\n\nमन को अपना मित्र कैसे बनाएं और इसे शत्रु बनने से कैसे रोकें?\n\nआत्म-विकास और आध्यात्मिक जागृति के व्यावहारिक उपाय।\n\n⏱️ Timestamps / समय सारणी:\n\n00:00 - Intro & Welcome (प्रस्तावना एवं स्वागत)\n\n02:15 - Topic Introduction (आज का मुख्य विषय)\n\n08:30 - Who is responsible for our elevation/downfall? (हमारा उद्धार और विनाश कौन करता है?)\n\n18:45 - The Role of Mind & Karma (मन और कर्मों की भूमिका)\n\n32:10 - Bhagavad Gita Verses & Key Lessons (भगवद्गीता के मुख्य श्लोक एवं सीख)\n\n48:00 - Practical Applications in Daily Life (दैनिक जीवन में उपयोग)\n\n1:00:15 - Q&A & Key Takeaways (प्रश्न-उत्तर एवं मुख्य निष्कर्ष)\n\n🌸 Join Ritambhar Academy of Mind:\n\n🔔 Subscribe: Stay tuned for more spiritual wisdom and Gita sessions.\n\nplaylists: Check out our [Gita For Beginners Playlist] for full lectures.\n\n#BhagavadGita #GitaForBeginners #SelfImprovement #SpiritualWisdom #RitambharAcademy",
+      "thumbnail": "",
+      "publishedAt": "2026-09-15T00:03:21+00:00",
+      "enabled": true,
+      "featured": false,
+      "source": "feed",
+      "displayOrder": 15
+    }
+  ],
+  "articlesHeading": "Articles & Insights",
+  "articlesIntro": "Small reflections. Meaningful changes.",
+  "articles": [
+    {
+      "id": "article-listening",
+      "initiative": "RAM",
+      "title": "The Everyday Practice of Listening",
+      "slug": "the-everyday-practice-of-listening",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "People sharing a conversation",
+      "excerpt": "How a little more attention can make room for a deeper connection.",
+      "body": "Listening begins with a pause. Before preparing an answer, make room to understand what another person is saying.\n\nTry offering your full attention in one conversation today. Let the speaker finish, then reflect back what you heard. A simple question can reveal more than a quick assumption.\n\nThoughtful listening is an everyday expression of respect. With practice, it can become a habit that strengthens relationships.",
+      "published": true,
+      "featured": true,
+      "displayOrder": 1,
+      "seoTitle": "The Everyday Practice of Listening | RAM",
+      "seoDescription": "A short reflection on attention and thoughtful listening."
+    },
+    {
+      "id": "article-values",
+      "initiative": "RAM",
+      "title": "Making Space for Your Values",
+      "slug": "making-space-for-your-values",
+      "image": "/images/hero-riverside-diya.png",
+      "imageAlt": "A traditional lamp beside a peaceful river",
+      "excerpt": "A moment of reflection can help us choose our next step with clarity.",
+      "body": "Our values become visible in everyday choices: how we speak, what we make time for and how we respond when plans change.\n\nChoose one value that matters to you. Consider a small action that would express it today. Kindness might mean checking in with someone; responsibility might mean following through on a promise.\n\nAt the end of the day, reflect without judgment. What helped? What would you like to try tomorrow? Learning grows through these small, repeated moments.",
+      "published": true,
+      "featured": false,
+      "displayOrder": 2,
+      "seoTitle": "Making Space for Your Values | RAM",
+      "seoDescription": "Reflect on the small everyday choices that express your values."
+    },
+    {
+      "id": "articles-9a4228da-dcb5-424b-9ca8-4e623e5f1ebc",
+      "initiative": "RAM",
+      "title": "New Article",
+      "slug": "articles-9a4228da-dcb5-424b-9ca8-4e623e5f1ebc",
+      "image": "",
+      "imageAlt": "",
+      "excerpt": "",
+      "body": "",
+      "published": false,
+      "featured": false,
+      "displayOrder": 3,
+      "seoTitle": "",
+      "seoDescription": ""
+    }
+  ],
+  "involvedHeading": "Grow with RAM",
+  "involvedIntro": "There is a place for you in this journey.",
+  "involved": [
+    {
+      "id": "join",
+      "icon": "BookOpen",
+      "title": "Join a Program",
+      "description": "Find a learning opportunity that speaks to you.",
+      "url": "#opportunities",
+      "enabled": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "volunteer",
+      "icon": "HandHeart",
+      "title": "Volunteer",
+      "description": "Share your time, skills and care.",
+      "url": "/get-involved/",
+      "enabled": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "support",
+      "icon": "Heart",
+      "title": "Support the Mission",
+      "description": "Help make values-based learning accessible.",
+      "url": "https://gloryofpeaceandlove.org",
+      "enabled": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "connect",
+      "icon": "Mail",
+      "title": "Stay Connected",
+      "description": "Start a conversation with our team.",
+      "url": "/contact/",
+      "enabled": true,
+      "displayOrder": 4
+    }
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Hero",
+      "visible": true
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "visible": true
+    },
+    {
+      "id": "programs",
+      "label": "Featured Programs",
+      "visible": true
+    },
+    {
+      "id": "opportunities",
+      "label": "Open Opportunities",
+      "visible": true
+    },
+    {
+      "id": "videos",
+      "label": "Videos",
+      "visible": true
+    },
+    {
+      "id": "articles",
+      "label": "Articles & Insights",
+      "visible": true
+    },
+    {
+      "id": "involved",
+      "label": "Get Involved",
+      "visible": true
+    }
+  ],
+  "seo": {
+    "title": "RAM | Ritambhar Academy of Mind",
+    "description": "Explore RAM programs for values-based learning, leadership, communication and personal growth. Find upcoming programs, waitlists and future opportunities.",
+    "canonical": "https://programs.gloryofpeaceandlove.org/ram",
+    "socialTitle": "Ritambhar Academy of Mind (RAM)",
+    "socialDescription": "Empowering Minds. Guiding Lives.",
+    "socialImage": "",
+    "index": true
+  },
+  "media": [
+    {
+      "id": "ram-logo",
+      "name": "RAM Logo",
+      "url": "/logos/ram-logo.png",
+      "alt": "RAM logo"
+    },
+    {
+      "id": "riverside",
+      "name": "Riverside Lamp",
+      "url": "/images/hero-riverside-diya.png",
+      "alt": "A peaceful riverside at sunrise"
+    }
+  ],
+  "submission": {
+    "useGlobal": false,
+    "adapter": "privateProxy",
+    "endpoint": "/api/ram/registrations/submit"
+  }
+}

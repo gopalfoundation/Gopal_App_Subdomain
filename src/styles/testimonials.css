@@ -1,0 +1,22 @@
+.testimonial-section { padding:64px 0; color:#102e45; background:#f8f6f9; border-block:1px solid #e1dfe5; }
+.testimonial-section header { text-align:center; max-width:720px; margin:0 auto 32px; }
+.testimonial-section h2 { font-size:36px; font-weight:500; letter-spacing:0; }
+.testimonial-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+.testimonial-card { padding:26px; background:white; border:1px solid #dcdfe1; border-radius:6px; min-width:0; overflow-wrap:anywhere; }
+.testimonial-card blockquote { margin:0 0 24px; font-size:19px; line-height:1.7; }
+.testimonial-card blockquote p { white-space:pre-line; }
+.testimonial-name { font-weight:700; margin-bottom:6px !important; }
+.testimonial-context { font:14px/1.7 Arial,sans-serif; color:#52616b; }
+.testimonial-photo { width:56px; height:56px; object-fit:cover; border-radius:50%; margin-bottom:18px; }
+.testimonial-video { display:block; position:relative; padding:0; width:100%; aspect-ratio:16/9; border:0; background:#18394a; color:white; cursor:pointer; }
+.testimonial-video img { width:100%; height:100%; object-fit:cover; }
+.testimonial-video span { position:absolute; inset:auto 0 0; padding:10px; background:#18394a; font:14px Arial,sans-serif; }
+.testimonial-card iframe { width:100%; aspect-ratio:16/9; border:0; margin-top:14px; }
+.testimonial-section button:focus-visible { outline:3px solid #aa7f27; outline-offset:3px; }
+.testimonial-editor { width:min(880px,calc(100% - 32px)); max-height:90dvh; overflow:auto; border:1px solid #c8d1d7; border-radius:6px; padding:24px; color:#18394a; font-family:Arial,sans-serif; }
+.testimonial-editor::backdrop { background:#152b39aa; }
+.testimonial-editor img { max-width:100%; }
+.testimonial-editor input,.testimonial-editor textarea,.testimonial-editor select { max-width:100%; }
+.testimonial-editor button { min-height:42px; padding:8px 12px; border:1px solid #b9c4ca; border-radius:4px; background:white; color:#18394a; cursor:pointer; }
+@media(max-width:800px) { .testimonial-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .testimonial-grid { grid-template-columns:1fr; } .testimonial-section h2 { font-size:28px; } }

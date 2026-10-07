@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/ram.css';
+---
+<BaseLayout title="RAM Insight" description="A reflection from Ritambhar Academy of Mind.">
+  <div class="ram-page"><section class="ram-section"><div class="container"><article class="ram-detail" data-ram-detail><h1>RAM Insights</h1><a href="/ram/articles/">Explore all articles</a></article></div></section></div>
+  <script>import { initRamDetail } from '../../lib/ram/page.mjs'; initRamDetail('article');</script>
+</BaseLayout>

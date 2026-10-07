@@ -1,0 +1,17 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('articles');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug ?? entry.id.replace(/\.md$/, '') }, props: { entry } }));
+}
+
+type Props = { entry: CollectionEntry<'articles'> };
+const { entry } = Astro.props as Props;
+const { Content } = await entry.render();
+---
+<BaseLayout title={`${entry.data.title} | SITA RAM Initiatives`} description={entry.data.description}>
+  <section class="page-hero"><div class="container page-hero__inner"><p class="eyebrow">{entry.data.category}</p><h1>{entry.data.title}</h1><p class="lede">{entry.data.description}</p></div></section>
+  <section class="section"><div class="container prose"><Content /></div></section>
+</BaseLayout>

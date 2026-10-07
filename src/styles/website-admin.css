@@ -1,0 +1,30 @@
+.website-admin { font:16px/1.6 Arial,sans-serif; }
+.website-admin h1,.website-admin h2,.website-admin h3 { font-family:Arial,sans-serif; letter-spacing:0; }
+.website-admin-brand { display:flex; align-items:center; gap:12px; font-weight:600; font-size:18px; padding-bottom:22px; border-bottom:1px solid var(--rc-line); }
+.website-admin .sidebar-group { font-size:12px; font-weight:600; text-transform:uppercase; color:#5b7067; margin:24px 0 8px; }
+.website-admin .rc-sidebar nav a { justify-content:flex-start; border:0; font-size:16px; font-weight:400; background:none; padding:10px; }
+.website-admin .rc-sidebar nav button { font-size:16px; font-weight:400; padding:10px; }
+.website-admin .rc-sidebar svg { width:18px; height:18px; }
+.website-admin .rc-field { font-size:15px; }
+.website-admin input,.website-admin select,.website-admin textarea { font-size:16px; }
+.website-admin .rc-editor-section>h2 { font-size:21px; margin-bottom:20px; }
+.website-admin .website-record { padding:22px 0; border-bottom:1px solid var(--rc-line); }
+.website-record-heading { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:20px; }
+.website-record-heading h3 { margin:0; }
+.website-admin .website-links { display:grid; gap:18px; margin:20px 0; }
+.website-admin .website-link-row { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) auto; align-items:end; gap:14px; border-bottom:1px solid var(--rc-line); padding-bottom:16px; }
+.website-admin .website-link-row .rc-switch { font-size:14px; }
+.website-admin .website-link-row .rc-actions { grid-column:1/-1; }
+.website-admin .rc-icon { min-width:44px; height:44px; }
+.website-admin .website-dashboard { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 32px; }
+.website-dashboard a,.website-dashboard button { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:24px 0; border:0; border-bottom:1px solid var(--rc-line); border-radius:0; text-align:left; font-size:17px; background:none; }
+.website-admin .rc-toolbar button { font-size:14px; }
+.website-admin .rc-field small { font-size:14px; }
+.website-admin .rc-muted { font-size:15px; }
+@media(max-width:800px) {
+  .website-admin .rc-sidebar nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); overflow:visible; }
+  .website-admin .sidebar-group { grid-column:1/-1; margin-top:16px; }
+  .website-admin .rc-sidebar nav button,.website-admin .rc-sidebar nav a { white-space:normal; min-width:0; justify-content:flex-start; }
+  .website-admin .rc-sidebar nav svg { flex-shrink:0; }
+}
+@media(max-width:600px) { .website-admin .website-link-row { grid-template-columns:minmax(0,1fr); } .website-admin .website-dashboard { grid-template-columns:1fr; } }

@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../../public/content/sita.json';
+import {articleCard} from '../../lib/sita/render.mjs';
+import {ordered} from '../../lib/sita/model.mjs';
+import '../../styles/sita.css';
+---
+<BaseLayout title="SITA Articles & Insights" description="Learning and perspectives on values, parenting and family life."><div class="sita-page"><section class="sita-section"><div class="container"><h1>Articles & Insights</h1><div class="sita-grid sita-article-grid" data-sita-list set:html={ordered(content.articles).filter(p=>p.published&&p.initiative==='SITA').map(articleCard).join('')||'<p>New insights coming soon.</p>'}></div></div></section></div><script>import {initSitaList} from '../../lib/sita/page.mjs';initSitaList('articles');</script></BaseLayout>

@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/ram.css';
+import content from '../../../public/content/ram.json';
+import { articleCard } from '../../lib/ram/render.mjs';
+---
+<BaseLayout title="RAM Articles & Insights" description="Read reflections on values, learning and thoughtful living from RAM.">
+  <div class="ram-page"><section class="ram-section"><div class="container"><a href="/ram/">Back to RAM</a><div class="ram-section-heading"><h1>Articles & Insights</h1></div><div class="ram-grid ram-article-grid" data-ram-list set:html={content.articles.filter(a => a.published).map(articleCard).join('')}></div></div></section></div>
+  <script>import { initRamList } from '../../lib/ram/page.mjs'; initRamList('articles');</script>
+</BaseLayout>

@@ -1,0 +1,39 @@
+---
+import '../styles/ram-admin.css';
+import '../styles/website-admin.css';
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex, nofollow" /><title>SITA RAM Admin</title></head>
+<body>
+  <div class="rc-shell website-admin">
+    <aside class="rc-sidebar">
+      <a class="website-admin-brand" href="/admin/"><img src="/logos/gopal-logo.png" alt="" width="46" height="46" /><span>SITA RAM Admin</span></a>
+      <nav aria-label="Main administration">
+        <h2 class="sidebar-group">Dashboard</h2>
+        <button type="button" data-section="dashboard" aria-current="page"><i data-lucide="LayoutDashboard"></i>Dashboard</button>
+        <h2 class="sidebar-group">Page Control Centers</h2>
+        <button type="button" data-section="home"><i data-lucide="House"></i>Homepage</button>
+        <a class="rc-button" href="/admin/ram/"><i data-lucide="BookOpen"></i>RAM</a>
+        <a class="rc-button" href="/admin/sita/"><i data-lucide="Sprout"></i>SITA</a>
+        <button type="button" data-section="community"><i data-lucide="Users"></i>Community Programs</button>
+        <button type="button" data-section="initiatives"><i data-lucide="Layers"></i>Our Initiatives</button>
+        <h2 class="sidebar-group">Site Settings</h2>
+        <button type="button" data-section="navigation"><i data-lucide="Menu"></i>Navigation</button>
+        <button type="button" data-section="global"><i data-lucide="Settings"></i>Global Settings</button>
+        <button type="button" data-section="seo"><i data-lucide="Search"></i>SEO</button>
+        <button type="button" data-section="contact"><i data-lucide="Mail"></i>Contact</button>
+        <button type="button" data-section="footer"><i data-lucide="PanelBottom"></i>Footer</button>
+        <h2 class="sidebar-group">Tools</h2>
+        <a class="rc-button" href="/" target="_blank" rel="noreferrer"><i data-lucide="ExternalLink"></i>View Website</a>
+      </nav>
+    </aside>
+    <main class="rc-main">
+      <header class="rc-topbar"><div><p class="rc-eyebrow">SITA RAM / ADMIN</p><h1 data-section-title>Dashboard</h1><p data-publication-state>Loading website settings...</p></div><div class="rc-toolbar"><button type="button" data-action="preview" disabled><i data-lucide="Eye"></i>Preview</button><button type="button" data-action="draft" disabled><i data-lucide="Save"></i>Save Draft</button><button type="button" data-action="publish" class="rc-primary" disabled><i data-lucide="Upload"></i>Publish Changes</button></div></header>
+      <p class="rc-status" data-status role="status" aria-live="polite"></p>
+      <form data-website-editor><div data-editor><p>Loading...</p></div></form>
+      <datalist id="website-images"><option value="/logos/gopal-logo.png" /><option value="/logos/ram-logo.png" /><option value="/logos/sita-logo.png" /><option value="/logos/bhaktisurabh-logo.jpg" /><option value="/images/hero-riverside-diya.png" /><option value="/images/sita-family-learning.png" /></datalist>
+      <footer class="rc-footer">Glory of Peace and Love / Website Administration</footer>
+    </main>
+  </div>
+  <script>import '../lib/website/admin.mjs';</script>
+</body></html>

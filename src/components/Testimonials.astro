@@ -1,0 +1,12 @@
+---
+import content from '../data/testimonials.json';
+import { publicTestimonials,testimonialMarkup } from '../lib/testimonials/model.mjs';
+import '../styles/testimonials.css';
+interface Props {initiative:string;programs?:Array<{id:string;title:string}>;}
+const { initiative,programs=[] }=Astro.props;
+---
+<div data-initiative-testimonials={initiative} data-testimonial-programs={JSON.stringify(programs.map(p=>({id:p.id,title:p.title})))} set:html={testimonialMarkup(publicTestimonials(content,initiative),programs)}></div>
+<script>
+  import { mountPublicTestimonials } from '../lib/testimonials/public.mjs';
+  document.querySelectorAll('[data-initiative-testimonials]').forEach(root=>mountPublicTestimonials(root,root.getAttribute('data-initiative-testimonials'),JSON.parse(root.getAttribute('data-testimonial-programs')||'[]')));
+</script>

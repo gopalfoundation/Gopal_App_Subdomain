@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site.json';
+---
+<BaseLayout title="About | SITA RAM Initiatives" description="Learn how SITA RAM initiatives relate to Glory of Peace and Love and support value-based learning, family wellbeing and community service.">
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <img src={site.logos.gopal} alt="GOPAL Foundation logo" />
+      <p class="eyebrow">About the Foundation</p>
+      <h1>Programs by Glory of Peace and Love</h1>
+      <p class="lede">SITA RAM Initiatives is a focused program website for initiatives under GOPAL Foundation, helping visitors discover programs, resources, events and ways to get involved.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container prose">
+      <h2>Our Relationship</h2>
+      <p>Glory of Peace and Love, also known as GOPAL Foundation, is the parent nonprofit organization. RAM, SITA, Community Programs and Bhaktisaurabh are presented here as connected initiatives, not separate unrelated organizations.</p>
+      <h2>Why This Site Exists</h2>
+      <p>This website gives the initiatives a focused home for program discovery, search-friendly landing pages, Google Ad Grants campaigns, and faster content updates while preserving a clear connection to the main GOPAL Foundation website.</p>
+      <h2>Values in Practice</h2>
+      <p>The shared emphasis is simple: character, compassion, family wellbeing, learning, service and community harmony.</p>
+      <div class="actions">
+        <a class="button button--primary" href={site.mainWebsiteUrl}>Visit the Main GOPAL Website</a>
+        <a class="button" href="/contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

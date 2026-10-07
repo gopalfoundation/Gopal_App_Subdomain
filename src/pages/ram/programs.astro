@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/ram.css';
+import content from '../../../public/content/ram.json';
+import { programCard } from '../../lib/ram/render.mjs';
+---
+<BaseLayout title="All RAM Programs | Ritambhar Academy of Mind" description="Explore all RAM learning programs.">
+  <div class="ram-page"><section class="ram-section"><div class="container"><a href="/ram/">Back to RAM</a><div class="ram-section-heading"><h1>RAM Programs</h1></div><div class="ram-grid ram-program-grid" data-ram-list set:html={content.programs.filter(p => p.active).map(programCard).join('')}></div></div></section></div>
+  <script>import { initRamList } from '../../lib/ram/page.mjs'; initRamList('programs');</script>
+</BaseLayout>

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "RAM",
+    "shortName": "RAM",
+    "subtitle": "Ritambhar Academy of Mind",
+    "logo": "/logos/ram-logo.png",
+    "description": "Character development, mind training, leadership, life skills and value-based learning.",
+    "href": "/ram",
+    "enabled": true,
+    "featured": true,
+    "tone": "gold"
+  },
+  {
+    "name": "SITA",
+    "shortName": "SITA",
+    "subtitle": "Sanskar Initiator Training Academy",
+    "logo": "/logos/sita-logo.png",
+    "description": "Supporting individuals and families through Sanskar, parenting, wellbeing, training and value-based life skills.",
+    "href": "/sita",
+    "enabled": true,
+    "featured": true,
+    "tone": "rose"
+  },
+  {
+    "name": "Community Programs",
+    "shortName": "Community",
+    "subtitle": "Programs rooted in values and service",
+    "logo": "/logos/bhaktisurabh-logo.jpg",
+    "description": "Educational, spiritual, youth, family, cultural and community programs rooted in values and service.",
+    "href": "/community-programs",
+    "enabled": true,
+    "featured": true,
+    "tone": "sky"
+  },
+  {
+    "name": "Bhaktisaurabh",
+    "shortName": "Bhaktisaurabh",
+    "subtitle": "A related initiative",
+    "logo": "/logos/bhaktisurabh-logo.jpg",
+    "description": "A related initiative nurturing devotion, values and service.",
+    "href": "https://gloryofpeaceandlove.org",
+    "enabled": true,
+    "featured": false,
+    "tone": "blue"
+  }
+]

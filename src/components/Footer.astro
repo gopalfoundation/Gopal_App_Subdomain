@@ -1,0 +1,5 @@
+---
+import website from '../../public/content/website.json';
+import {footerMarkup} from '../lib/website/model.mjs';
+---
+<footer class="site-footer" data-website-footer set:html={footerMarkup(website)} />
