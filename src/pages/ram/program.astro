@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/ram.css';
+---
+<BaseLayout title="RAM Program" description="Explore a RAM learning program.">
+  <div class="ram-page"><section class="ram-section"><div class="container"><article class="ram-detail" data-ram-detail><h1>RAM Program</h1><a href="/ram/programs/">Explore all programs</a></article></div></section></div>
+  <script>import { initRamDetail } from '../../lib/ram/page.mjs'; initRamDetail('program');</script>
+</BaseLayout>

@@ -1,0 +1,28 @@
+{
+  "organizationName": "Glory of Peace and Love",
+  "organizationShortName": "GOPAL Foundation",
+  "siteName": "SITA RAM Initiatives",
+  "tagline": "Values, learning and service for a brighter tomorrow.",
+  "mainWebsiteUrl": "https://gloryofpeaceandlove.org",
+  "donationUrl": "https://gloryofpeaceandlove.org",
+  "volunteerUrl": "/get-involved",
+  "contactEmail": "info@sitaram.gloryofpeaceandlove.org",
+  "contactPhone": "",
+  "address": "GOPAL Foundation",
+  "social": {
+    "youtube": "https://gloryofpeaceandlove.org",
+    "facebook": "https://gloryofpeaceandlove.org",
+    "instagram": "https://gloryofpeaceandlove.org",
+    "linkedin": ""
+  },
+  "logos": {
+    "gopal": "/logos/gopal-logo.png",
+    "ram": "/logos/ram-logo.png",
+    "sita": "/logos/sita-logo.png",
+    "bhaktisurabh": "/logos/bhaktisurabh-logo.jpg",
+    "footer": "/logos/gopal-logo.png"
+  },
+  "defaultSeoTitle": "SITA RAM Initiatives | Glory of Peace and Love",
+  "defaultSeoDescription": "Explore SITA RAM initiatives by Glory of Peace and Love, including RAM, SITA and community programs focused on values, learning, family wellbeing and service.",
+  "heroImage": "/images/hero-riverside-diya.png"
+}

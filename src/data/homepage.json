@@ -1,0 +1,13 @@
+{
+  "eyebrow": "VALUES • LEARNING • SERVICE • A BRIGHTER TOMORROW",
+  "headline": "Nurturing Values for a Kinder World",
+  "description": "SITA RAM represents value-based initiatives of Glory of Peace and Love (GOPAL Foundation), focused on personal growth, family wellbeing, character development, education and community service.",
+  "primaryCta": { "label": "Explore Programs", "href": "/programs", "enabled": true },
+  "secondaryCta": { "label": "About the Foundation", "href": "/about", "enabled": true },
+  "sections": {
+    "showPrograms": true,
+    "showEvents": true,
+    "showArticles": true,
+    "showGetInvolved": true
+  }
+}

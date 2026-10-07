@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import '../../../styles/ram.css';
+import content from '../../../../public/content/ram.json';
+export function getStaticPaths() {
+  return content.programs.filter(p => p.active).map(program => ({params:{slug:program.slug},props:{program}}));
+}
+const { program } = Astro.props;
+---
+<BaseLayout title={program.seoTitle || program.title} description={program.seoDescription || program.shortDescription}>
+  <div class="ram-page"><section class="ram-section"><div class="container"><article class="ram-detail" data-ram-detail data-ram-record-slug={program.slug}><a class="ram-text-link" href="/ram/">Back to RAM</a><h1>{program.title}</h1><img src={program.image || '/images/hero-riverside-diya.png'} alt={program.imageAlt} /><p>{program.fullDescription}</p><a class="button button--primary" href="/ram/#opportunities">Find Open Opportunities</a></article></div></section></div>
+  <script>import { initRamDetail } from '../../../lib/ram/page.mjs'; initRamDetail('program');</script>
+</BaseLayout>

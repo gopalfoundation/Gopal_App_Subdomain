@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const articles = await getCollection('articles');
+const slugFor = (article: (typeof articles)[number]) => article.data.slug ?? article.id.replace(/\.md$/, '');
+---
+<BaseLayout title="Resources | SITA RAM Initiatives" description="Articles and resources from SITA RAM Initiatives.">
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Learning Resources</p>
+      <h1>Resources</h1>
+      <p class="lede">Articles and resources can support visitors before and after they attend programs.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-grid">
+      {articles.map((article) => (
+        <a class="content-card" href={`/articles/${slugFor(article)}`}>
+          <h3>{article.data.title}</h3>
+          <p>{article.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

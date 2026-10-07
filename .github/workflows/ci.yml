@@ -1,0 +1,32 @@
+name: Validate SITA RAM
+on:
+  pull_request:
+  push:
+    branches: [main, codex/production-programs-migration]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm ci --prefix firebase/functions
+      - run: npm test
+      - run: npm run build
+        env:
+          SKIP_VIDEO_SYNC: 'true'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: validated-firebase-build
+          path: |
+            dist/hosting/
+            firebase/functions/lib/
+            firebase/functions/site/
+          retention-days: 7

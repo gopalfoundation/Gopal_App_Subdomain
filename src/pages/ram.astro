@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/ram.css';
+import content from '../../public/content/ram.json';
+import { renderPage } from '../lib/ram/render.mjs';
+import Testimonials from '../components/Testimonials.astro';
+---
+<BaseLayout title={content.seo.title} description={content.seo.description} canonicalUrl={content.seo.canonical} socialTitle={content.seo.socialTitle} socialDescription={content.seo.socialDescription} socialImage={content.seo.socialImage} indexable={content.seo.index}>
+  <div class="ram-page" data-ram-root set:html={renderPage(content)}></div>
+  <Testimonials initiative="RAM" programs={content.programs} />
+  <script>
+    import { initRamPage } from '../lib/ram/page.mjs';
+    initRamPage();
+  </script>
+</BaseLayout>

@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+const featured = (await getCollection('programs'))
+  .filter((item) => item.data.featured !== false)
+  .sort((a, b) => a.data.order - b.data.order);
+const slugFor = (program: (typeof featured)[number]) => program.data.slug ?? program.id.replace(/\.md$/, '');
+---
+<div class="content-grid" data-dynamic-programs>
+  {featured.map((program) => (
+    <a class="content-card" href={`/programs/${slugFor(program)}`}>
+      <h3>{program.data.title}</h3>
+      <p>{program.data.description}</p>
+    </a>
+  ))}
+</div>

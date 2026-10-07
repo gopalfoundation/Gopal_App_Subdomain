@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../../public/content/sita.json';
+import {programCard} from '../../lib/sita/render.mjs';
+import {ordered} from '../../lib/sita/model.mjs';
+import '../../styles/sita.css';
+---
+<BaseLayout title="SITA Programs" description="Explore SITA programs in family wellbeing, Sanskar and parenting."><div class="sita-page"><section class="sita-section"><div class="container"><h1>SITA Programs</h1><div class="sita-grid sita-program-grid" data-sita-list set:html={ordered(content.programs).filter(p=>p.active).map(programCard).join('')}></div></div></section></div><script>import {initSitaList} from '../../lib/sita/page.mjs';initSitaList('programs');</script></BaseLayout>

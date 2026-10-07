@@ -1,0 +1,39 @@
+---
+import '../../styles/ram-admin.css';
+import '../../styles/ram.css';
+import '../../styles/testimonials.css';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>RAM Page Control Center</title>
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <div class="rc-shell">
+      <aside class="rc-sidebar">
+        <a class="rc-back" href="/admin/">SITA RAM Admin</a>
+        <div class="rc-brand"><img src="/logos/ram-logo.png" alt="RAM logo" width="52" height="52" /><div><strong>RAM Page</strong><small>Control Center</small></div></div>
+        <nav aria-label="RAM page sections" data-ram-admin-nav></nav>
+        <a class="rc-live-link" href="/ram/" target="_blank" rel="noreferrer">View Live RAM Page</a>
+      </aside>
+      <main class="rc-main">
+        <header class="rc-topbar"><div><p class="rc-eyebrow">PAGES / RAM</p><h1>RAM Page Control Center</h1><p data-publication-state>Published locally</p></div><div class="rc-toolbar"><button type="button" data-admin-action="preview"><i data-lucide="Eye"></i>Preview</button><button type="button" data-admin-action="save"><i data-lucide="Save"></i>Save Draft</button><button class="rc-primary" type="button" data-admin-action="publish"><i data-lucide="Upload"></i>Publish Changes</button></div></header>
+        <p class="rc-status" role="status" data-ram-admin-status></p>
+        <section data-ram-admin-view aria-live="polite"><p>Loading RAM content...</p></section>
+        <footer class="rc-footer">Publishing updates the website on this computer. Public hosting requires a separate website release.</footer>
+      </main>
+    </div>
+    <dialog id="ram-record-dialog"><form data-record-form><div class="rc-dialog-heading"><h2 data-record-heading></h2><button type="button" class="rc-icon" data-close-dialog title="Close editor" aria-label="Close editor"><i data-lucide="X"></i></button></div><div data-record-fields></div><div class="rc-dialog-footer"><button type="button" data-close-dialog>Cancel</button><button type="submit" class="rc-primary">Apply Changes</button></div></form></dialog>
+    <dialog id="ram-media-dialog"><div class="rc-dialog-heading"><h2>Select an Image</h2><button type="button" class="rc-icon" data-close-media title="Close image library" aria-label="Close image library"><i data-lucide="X"></i></button></div><label class="rc-upload"><i data-lucide="Upload"></i>Upload Image<input type="file" accept="image/png,image/jpeg,image/webp" data-media-upload /></label><p class="rc-muted">PNG, JPEG or WebP. Up to 5 MB.</p><p data-media-status role="status"></p><div class="rc-media-grid" data-media-library></div></dialog>
+    <dialog id="ram-preview-dialog"><div class="rc-dialog-heading"><h2>RAM Draft Preview</h2><button type="button" class="rc-icon" data-close-preview title="Close preview" aria-label="Close preview"><i data-lucide="X"></i></button></div><iframe title="RAM draft preview" data-ram-preview-frame></iframe></dialog>
+    <dialog id="ram-experience-preview"><div class="rc-dialog-heading"><h2>Preview</h2><button type="button" class="rc-icon" data-close-experience title="Close preview" aria-label="Close preview"><i data-lucide="X"></i></button></div><div class="ram-page" data-experience-body></div></dialog>
+    <script>
+      import { initRamAdmin } from '../../lib/ram/admin.mjs';
+      initRamAdmin();
+    </script>
+  </body>
+</html>

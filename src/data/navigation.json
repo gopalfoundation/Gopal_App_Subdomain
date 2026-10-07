@@ -1,0 +1,8 @@
+[
+  { "label": "Home", "href": "/", "enabled": true },
+  { "label": "About", "href": "/about", "enabled": true },
+  { "label": "Our Initiatives", "href": "/programs", "enabled": true },
+  { "label": "Resources", "href": "/articles", "enabled": true },
+  { "label": "Get Involved", "href": "/get-involved", "enabled": true },
+  { "label": "Contact", "href": "/contact", "enabled": true }
+]

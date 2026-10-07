@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="RSVP | SITA RAM Initiatives" description="Register interest for upcoming SITA RAM programs.">
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Program Registration</p>
+      <h1>RSVP for a Program</h1>
+      <p class="lede">Use this form to register interest for upcoming programs when RSVP is open.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="rsvp-shell">
+        <div data-standalone-rsvp></div>
+        <aside class="content-card">
+          <h3>Before You Submit</h3>
+          <p>For current registration opportunities, visit <a href="/ram/#opportunities">RAM</a> or <a href="/sita/#opportunities">SITA</a>.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

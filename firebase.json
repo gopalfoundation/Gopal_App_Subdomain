@@ -2,7 +2,10 @@
   "hosting": [
     {
       "target": "gloryofpeace-landing",
-      "public": ".",
+      "public": "dist/hosting",
+      "cleanUrls": true,
+      "redirects": [{"source":"/resources","destination":"/articles/","type":301},{"source":"/resources/","destination":"/articles/","type":301}],
+      "rewrites": [{"source":"**","function":{"functionId":"programsApp","region":"us-central1","pinTag":true}}],
       "ignore": [
         ".git/**",
         "firebase.json",
@@ -39,5 +42,6 @@
         }
       ]
     }
-  ]
+  ],
+  "functions": [{"source":"firebase/functions","codebase":"gopal-programs","runtime":"nodejs22","ignore":["node_modules",".git","*-debug.log",".secret.local",".env*","*service-account*.json","credentials*.json"]}]
 }

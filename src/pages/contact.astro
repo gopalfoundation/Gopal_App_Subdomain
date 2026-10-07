@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import website from '../../public/content/website.json';
+const {site} = website;
+---
+<BaseLayout title="Contact | SITA RAM Initiatives" description="Contact SITA RAM Initiatives for programs, events, volunteering and resources.">
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Contact Us</p>
+      <h1>Start a Conversation</h1>
+      <p class="lede">Reach out about programs, events, volunteering or initiative information.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container prose">
+      <h2>Email</h2>
+      <p><a href={`mailto:${site.contactEmail}`} data-website-email>{site.contactEmail}</a></p>
+      <p data-website-text="site.contactPhone">{site.contactPhone}</p>
+      <p data-website-text="site.address">{site.address}</p>
+      <h2>Main Website</h2>
+      <p><a href={site.mainWebsiteUrl} data-website-href="site.mainWebsiteUrl" data-website-text="site.mainWebsiteUrl">{site.mainWebsiteUrl}</a></p>
+      <h2>Program Details</h2>
+      <p>Specific dates, registration links and facilitator information should be added only when confirmed by the organization.</p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const events = await getCollection('events');
+const slugFor = (event: (typeof events)[number]) => event.data.slug ?? event.id.replace(/\.md$/, '');
+---
+<BaseLayout title="Events | SITA RAM Initiatives" description="Upcoming and featured SITA RAM events.">
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Gatherings and Sessions</p>
+      <h1>Events</h1>
+      <p class="lede">Events can be updated through the content system with dates, locations and registration links as they are confirmed.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-grid">
+      {events.map((event) => (
+        <a class="content-card" href={`/events/${slugFor(event)}`}>
+          <h3>{event.data.title}</h3>
+          <p>{event.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

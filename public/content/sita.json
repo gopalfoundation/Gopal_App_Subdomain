@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-02T23:11:13.043Z",
+  "hero": {
+    "logo": "/logos/sita-logo.png",
+    "logoAlt": "SITA - Sanskar Initiator Training Academy logo",
+    "image": "/images/sita-family-learning.png",
+    "imageAlt": "Illustrative family learning scene: mother and daughter reading together",
+    "eyebrow": "AN INITIATIVE OF GOPAL FOUNDATION",
+    "title": "SITA",
+    "subtitle": "Sanskar Initiator Training Academy",
+    "tagline": "Values for Life. Sanskar for Generations.",
+    "intro": "A welcoming space for family wellbeing, prenatal and postnatal education, parenting, women's empowerment, Yoga and personal growth rooted in Sanskar.",
+    "brandWords": [
+      "Family",
+      "Values",
+      "Learning",
+      "Together"
+    ],
+    "primaryLabel": "Explore Programs",
+    "primaryUrl": "#featured-programs",
+    "primaryVisible": true,
+    "secondaryLabel": "Explore Opportunities",
+    "secondaryUrl": "#opportunities",
+    "secondaryVisible": true
+  },
+  "about": {
+    "heading": "About SITA",
+    "description": "SITA brings values into the everyday life of families. Through reflection, shared learning and practical guidance, we explore Sanskar, parenting, family wellbeing and personal and spiritual growth.\n\nAn initiative of Glory of Peace and Love (GOPAL Foundation), SITA welcomes individuals and families to learn together. Our programs are educational and do not replace professional medical or mental-health care.",
+    "image": "",
+    "imageAlt": "",
+    "buttonLabel": "About the Foundation",
+    "buttonUrl": "/about/",
+    "buttonVisible": true,
+    "values": [
+      {
+        "id": "sita-values",
+        "title": "Sanskar & Values",
+        "description": "Thoughtful choices grounded in empathy, responsibility and care.",
+        "icon": "BookOpen",
+        "displayOrder": 1,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "sita-family",
+        "title": "Family Wellbeing",
+        "description": "Space for listening, reflection and connection within families.",
+        "icon": "Heart",
+        "displayOrder": 2,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "sita-women",
+        "title": "Women Empowerment",
+        "description": "Shared learning, self-development and a supportive community.",
+        "icon": "Users",
+        "displayOrder": 3,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "sita-generations",
+        "title": "Future Generations",
+        "description": "Explore the values we practice and pass on.",
+        "icon": "Sprout",
+        "displayOrder": 4,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      }
+    ]
+  },
+  "programsHeading": "Featured Programs",
+  "programsIntro": "Learning for ourselves. Care for our families. Values for generations.",
+  "programs": [
+    {
+      "id": "sita-vedic-garbh-vigyan",
+      "initiative": "SITA",
+      "title": "Vedic Garbh Vigyan",
+      "slug": "vedic-garbh-vigyan",
+      "category": "Prenatal Learning",
+      "audience": "Expectant parents",
+      "shortDescription": "Prenatal learning and family preparation rooted in values, wellbeing and traditional wisdom.",
+      "fullDescription": "Prenatal learning and family preparation rooted in values, wellbeing and traditional wisdom.\n\nExplore these themes through conversation, reflection and everyday practice. Session details, language and format are announced with each registration opportunity. Contact our team with questions about suitability or participation.",
+      "image": "/images/sita-family-learning.png",
+      "imageAlt": "Illustrative mother and daughter learning together",
+      "featured": true,
+      "active": true,
+      "displayOrder": 1,
+      "pageUrl": "",
+      "seoTitle": "Vedic Garbh Vigyan | SITA",
+      "seoDescription": "Prenatal learning and family preparation rooted in values, wellbeing and traditional wisdom.",
+      "socialImage": "",
+      "explore": "Spiritual reflection\nFamily preparation\nLifestyle awareness\nMusic, art and positive thinking",
+      "journey": "Learn together\nReflect on everyday experiences\nPractice with care",
+      "schedule": "Future sessions will be announced with each opportunity.",
+      "faq": [],
+      "index": false
+    },
+    {
+      "id": "sita-mahila-empowerment",
+      "initiative": "SITA",
+      "title": "Mahila Empowerment - Through Satsang",
+      "slug": "mahila-empowerment",
+      "category": "Women & Family",
+      "audience": "Women",
+      "shortDescription": "A supportive learning and satsang environment for values, self-development and spiritual learning.",
+      "fullDescription": "A supportive learning and satsang environment for values, self-development and spiritual learning.\n\nExplore these themes through conversation, reflection and everyday practice. Session details, language and format are announced with each registration opportunity. Contact our team with questions about suitability or participation.",
+      "image": "/logos/sita-logo.png",
+      "imageAlt": "SITA academy logo",
+      "featured": true,
+      "active": true,
+      "displayOrder": 2,
+      "pageUrl": "",
+      "seoTitle": "Mahila Empowerment - Through Satsang | SITA",
+      "seoDescription": "A supportive learning and satsang environment for values, self-development and spiritual learning.",
+      "socialImage": "",
+      "explore": "Values and spiritual learning\nSelf-reflection\nSatsang and community connection",
+      "journey": "Learn together\nReflect on everyday experiences\nPractice with care",
+      "schedule": "Future sessions will be announced with each opportunity.",
+      "faq": [],
+      "index": false
+    },
+    {
+      "id": "sita-parenting",
+      "initiative": "SITA",
+      "title": "Parenting Sessions",
+      "slug": "parenting",
+      "category": "Parenting",
+      "audience": "Parents & caregivers",
+      "shortDescription": "Practical value-based guidance for families navigating modern parenting challenges.",
+      "fullDescription": "Practical value-based guidance for families navigating modern parenting challenges.\n\nExplore these themes through conversation, reflection and everyday practice. Session details, language and format are announced with each registration opportunity. Contact our team with questions about suitability or participation.",
+      "image": "/images/sita-family-learning.png",
+      "imageAlt": "Illustrative mother and daughter learning together",
+      "featured": true,
+      "active": true,
+      "displayOrder": 3,
+      "pageUrl": "",
+      "seoTitle": "Parenting Sessions | SITA",
+      "seoDescription": "Practical value-based guidance for families navigating modern parenting challenges.",
+      "socialImage": "",
+      "explore": "Listening and communication\nFamily values\nScreens and social media\nPeer influence",
+      "journey": "Learn together\nReflect on everyday experiences\nPractice with care",
+      "schedule": "Future sessions will be announced with each opportunity.",
+      "faq": [],
+      "index": false
+    }
+  ],
+  "opportunitiesHeading": "Find Open Opportunities",
+  "opportunitiesIntro": "Express interest in a future session. Dates and registration details will be announced by the team.",
+  "opportunities": [
+    {
+      "id": "sita-vedic-garbh-vigyan-interest",
+      "programId": "sita-vedic-garbh-vigyan",
+      "name": "Vedic Garbh Vigyan - Future Sessions",
+      "registrationType": "FUTURE_INTEREST",
+      "status": "FUTURE_INTEREST",
+      "description": "Prenatal learning and family preparation rooted in values, wellbeing and traditional wisdom.",
+      "startDate": "",
+      "endDate": "",
+      "timezone": "America/Los_Angeles",
+      "location": "To be announced",
+      "format": "Online",
+      "audience": "Expectant parents",
+      "ageRange": "",
+      "schedule": "Dates and format to be announced.",
+      "formId": "sita-form-vedic-garbh-vigyan",
+      "opensAt": "",
+      "closesAt": "",
+      "displayOnSitaPage": true,
+      "featured": true,
+      "displayOrder": 1,
+      "image": "",
+      "imageAlt": "",
+      "buttonLabel": "I'm Interested",
+      "success": {
+        "heading": "Interest Received!",
+        "message": "Thank you for your interest in Vedic Garbh Vigyan.",
+        "nextStepsHeading": "What Happens Next",
+        "nextSteps": "Our team will contact you when future session details are available.",
+        "showClose": true,
+        "showContact": true,
+        "contactLabel": "Contact SITA",
+        "contactUrl": "/contact/",
+        "showRelated": true,
+        "relatedLabel": "Explore the Program",
+        "primaryEnabled": false,
+        "secondaryEnabled": false,
+        "calendar": false,
+        "showGroup": false
+      }
+    },
+    {
+      "id": "sita-mahila-empowerment-interest",
+      "programId": "sita-mahila-empowerment",
+      "name": "Mahila Empowerment - Through Satsang - Future Sessions",
+      "registrationType": "FUTURE_INTEREST",
+      "status": "FUTURE_INTEREST",
+      "description": "A supportive learning and satsang environment for values, self-development and spiritual learning.",
+      "startDate": "",
+      "endDate": "",
+      "timezone": "America/Los_Angeles",
+      "location": "To be announced",
+      "format": "Online",
+      "audience": "Women",
+      "ageRange": "",
+      "schedule": "Dates and format to be announced.",
+      "formId": "sita-form-mahila-empowerment",
+      "opensAt": "",
+      "closesAt": "",
+      "displayOnSitaPage": true,
+      "featured": true,
+      "displayOrder": 2,
+      "image": "",
+      "imageAlt": "",
+      "buttonLabel": "I'm Interested",
+      "success": {
+        "heading": "Interest Received!",
+        "message": "Thank you for your interest in Mahila Empowerment - Through Satsang.",
+        "nextStepsHeading": "What Happens Next",
+        "nextSteps": "Our team will contact you when future session details are available.",
+        "showClose": true,
+        "showContact": true,
+        "contactLabel": "Contact SITA",
+        "contactUrl": "/contact/",
+        "showRelated": true,
+        "relatedLabel": "Explore the Program",
+        "primaryEnabled": false,
+        "secondaryEnabled": false,
+        "calendar": false,
+        "showGroup": false
+      }
+    },
+    {
+      "id": "sita-parenting-interest",
+      "programId": "sita-parenting",
+      "name": "Parenting Sessions - Future Sessions",
+      "registrationType": "FUTURE_INTEREST",
+      "status": "FUTURE_INTEREST",
+      "description": "Practical value-based guidance for families navigating modern parenting challenges.",
+      "startDate": "",
+      "endDate": "",
+      "timezone": "America/Los_Angeles",
+      "location": "To be announced",
+      "format": "Online",
+      "audience": "Parents & caregivers",
+      "ageRange": "",
+      "schedule": "Dates and format to be announced.",
+      "formId": "sita-form-parenting",
+      "opensAt": "",
+      "closesAt": "",
+      "displayOnSitaPage": true,
+      "featured": true,
+      "displayOrder": 3,
+      "image": "",
+      "imageAlt": "",
+      "buttonLabel": "I'm Interested",
+      "success": {
+        "heading": "Interest Received!",
+        "message": "Thank you for your interest in Parenting Sessions.",
+        "nextStepsHeading": "What Happens Next",
+        "nextSteps": "Our team will contact you when future session details are available.",
+        "showClose": true,
+        "showContact": true,
+        "contactLabel": "Contact SITA",
+        "contactUrl": "/contact/",
+        "showRelated": true,
+        "relatedLabel": "Explore the Program",
+        "primaryEnabled": false,
+        "secondaryEnabled": false,
+        "calendar": false,
+        "showGroup": false
+      }
+    }
+  ],
+  "forms": [
+    {
+      "id": "sita-form-vedic-garbh-vigyan",
+      "name": "Vedic Garbh Vigyan - Future Interest",
+      "heading": "Stay Connected: Vedic Garbh Vigyan",
+      "description": "Share your interest so our team can contact you about future sessions.",
+      "submitLabel": "Notify Me About Future Sessions",
+      "questions": [
+        {
+          "id": "name",
+          "label": "First and Last Name",
+          "type": "shortText",
+          "enabled": true,
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "enabled": true,
+          "required": true
+        },
+        {
+          "id": "city-state",
+          "label": "City / State",
+          "type": "shortText",
+          "enabled": true,
+          "required": false
+        },
+        {
+          "id": "consent",
+          "label": "I agree to be contacted about this program.",
+          "type": "consent",
+          "enabled": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "sita-form-mahila-empowerment",
+      "name": "Mahila Empowerment - Through Satsang - Future Interest",
+      "heading": "Stay Connected: Mahila Empowerment - Through Satsang",
+      "description": "Share your interest so our team can contact you about future sessions.",
+      "submitLabel": "Notify Me About Future Sessions",
+      "questions": [
+        {
+          "id": "name",
+          "label": "First and Last Name",
+          "type": "shortText",
+          "enabled": true,
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "enabled": true,
+          "required": true
+        },
+        {
+          "id": "city-state",
+          "label": "City / State",
+          "type": "shortText",
+          "enabled": true,
+          "required": false
+        },
+        {
+          "id": "consent",
+          "label": "I agree to be contacted about this program.",
+          "type": "consent",
+          "enabled": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "sita-form-parenting",
+      "name": "Parenting Sessions - Future Interest",
+      "heading": "Stay Connected: Parenting Sessions",
+      "description": "Share your interest so our team can contact you about future sessions.",
+      "submitLabel": "Notify Me About Future Sessions",
+      "questions": [
+        {
+          "id": "name",
+          "label": "First and Last Name",
+          "type": "shortText",
+          "enabled": true,
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "enabled": true,
+          "required": true
+        },
+        {
+          "id": "city-state",
+          "label": "City / State",
+          "type": "shortText",
+          "enabled": true,
+          "required": false
+        },
+        {
+          "id": "consent",
+          "label": "I agree to be contacted about this program.",
+          "type": "consent",
+          "enabled": true,
+          "required": true
+        }
+      ]
+    }
+  ],
+  "journey": {
+    "heading": "The SITA Journey",
+    "intro": "Small steps of learning, reflection and connection.",
+    "items": [
+      {
+        "id": "learn",
+        "title": "Learn",
+        "description": "Explore timeless values and fresh perspectives.",
+        "icon": "BookOpen",
+        "displayOrder": 1,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "reflect",
+        "title": "Reflect",
+        "description": "Make space for thoughtful questions.",
+        "icon": "Heart",
+        "displayOrder": 2,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "practice",
+        "title": "Practice",
+        "description": "Bring learning into everyday choices.",
+        "icon": "Sprout",
+        "displayOrder": 3,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "connect",
+        "title": "Connect",
+        "description": "Listen, share and learn together.",
+        "icon": "Users",
+        "displayOrder": 4,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "grow",
+        "title": "Grow",
+        "description": "Continue your journey with care.",
+        "icon": "HeartHandshake",
+        "displayOrder": 5,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      }
+    ]
+  },
+  "why": {
+    "heading": "Why It Matters",
+    "intro": "Educational themes that connect personal growth with family life.",
+    "items": [
+      {
+        "id": "bonding",
+        "title": "Family Bonding",
+        "description": "Explore listening and shared experiences.",
+        "icon": "Heart",
+        "displayOrder": 1,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "heritage",
+        "title": "Cultural Heritage",
+        "description": "Reflect on the traditions and values we carry.",
+        "icon": "BookOpen",
+        "displayOrder": 2,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      },
+      {
+        "id": "awareness",
+        "title": "Spiritual Awareness",
+        "description": "Make room for reflection and purposeful living.",
+        "icon": "Sprout",
+        "displayOrder": 3,
+        "enabled": true,
+        "image": "",
+        "imageAlt": ""
+      }
+    ]
+  },
+  "videosHeading": "Latest from SITA",
+  "videosIntro": "Conversations and learning from our community.",
+  "videoSettings": {
+    "sourceType": "MANUAL_CURATION",
+    "channelUrl": "",
+    "channelId": "",
+    "playlistId": "",
+    "automatic": false,
+    "count": 6,
+    "featuredMode": "AUTO_LATEST",
+    "featuredId": "",
+    "showChannelButton": false,
+    "channelButtonLabel": "View SITA on YouTube",
+    "showDate": true,
+    "showDuration": true,
+    "showDescription": false,
+    "channelNewTab": true
+  },
+  "videos": [],
+  "articlesHeading": "Articles & Insights",
+  "articlesIntro": "Perspectives on parenting, Sanskar and family life.",
+  "articles": [],
+  "involvedHeading": "Get Involved",
+  "involvedIntro": "Be part of a community grounded in learning and care.",
+  "involved": [
+    {
+      "id": "join",
+      "title": "Join a Program",
+      "description": "Find a learning opportunity for you or your family.",
+      "icon": "BookOpen",
+      "displayOrder": 1,
+      "enabled": true,
+      "image": "",
+      "imageAlt": "",
+      "url": "#opportunities"
+    },
+    {
+      "id": "volunteer",
+      "title": "Volunteer",
+      "description": "Share your time and skills with the community.",
+      "icon": "HandHeart",
+      "displayOrder": 2,
+      "enabled": true,
+      "image": "",
+      "imageAlt": "",
+      "url": "/get-involved/"
+    },
+    {
+      "id": "support",
+      "title": "Support the Mission",
+      "description": "Help sustain values-based education.",
+      "icon": "Heart",
+      "displayOrder": 3,
+      "enabled": true,
+      "image": "",
+      "imageAlt": "",
+      "url": "/get-involved/"
+    },
+    {
+      "id": "connect",
+      "title": "Stay Connected",
+      "description": "Get in touch with the SITA team.",
+      "icon": "Mail",
+      "displayOrder": 4,
+      "enabled": true,
+      "image": "",
+      "imageAlt": "",
+      "url": "/contact/"
+    }
+  ],
+  "seo": {
+    "title": "SITA | Sanskar Initiator Training Academy",
+    "description": "Explore SITA's value-based programs in prenatal learning, parenting, women's empowerment, Sanskar and family wellbeing.",
+    "canonical": "https://programs.gloryofpeaceandlove.org/sita",
+    "socialTitle": "SITA | Values for Life",
+    "socialDescription": "Family-centered learning rooted in values and Sanskar.",
+    "socialImage": "/logos/sita-logo.png",
+    "index": true
+  },
+  "submission": {
+    "adapter": "privateProxy",
+    "endpoint": "/api/sita/registrations/submit",
+    "useGlobal": false
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Hero",
+      "visible": true
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "visible": true
+    },
+    {
+      "id": "programs",
+      "label": "Featured Programs",
+      "visible": true
+    },
+    {
+      "id": "opportunities",
+      "label": "Open Opportunities",
+      "visible": true
+    },
+    {
+      "id": "journey",
+      "label": "Journey",
+      "visible": true
+    },
+    {
+      "id": "why",
+      "label": "Why It Matters",
+      "visible": true
+    },
+    {
+      "id": "videos",
+      "label": "Videos",
+      "visible": false
+    },
+    {
+      "id": "articles",
+      "label": "Articles",
+      "visible": true
+    },
+    {
+      "id": "testimonials",
+      "label": "Testimonials",
+      "visible": true
+    },
+    {
+      "id": "involved",
+      "label": "Get Involved",
+      "visible": true
+    }
+  ],
+  "media": [
+    {
+      "id": "sita-logo",
+      "name": "SITA Logo",
+      "url": "/logos/sita-logo.png",
+      "alt": "SITA academy logo"
+    },
+    {
+      "id": "sita-family",
+      "name": "Family Learning (Illustrative)",
+      "url": "/images/sita-family-learning.png",
+      "alt": "Mother and daughter reading together"
+    },
+    {
+      "id": "riverside",
+      "name": "Riverside Lamp",
+      "url": "/images/hero-riverside-diya.png",
+      "alt": "A peaceful riverside lamp"
+    }
+  ]
+}
