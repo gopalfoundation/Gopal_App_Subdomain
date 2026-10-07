@@ -1,47 +1,82 @@
 {
-  "hosting": [
-    {
-      "target": "gloryofpeace-landing",
-      "public": "dist/hosting",
-      "cleanUrls": true,
-      "redirects": [{"source":"/resources","destination":"/articles/","type":301},{"source":"/resources/","destination":"/articles/","type":301}],
-      "rewrites": [{"source":"**","function":{"functionId":"programsApp","region":"us-central1","pinTag":true}}],
-      "ignore": [
-        ".git/**",
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "headers": [
+    "hosting": [
         {
-          "source": "**/*.html",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "no-cache"
-            }
-          ]
-        },
-        {
-          "source": "**/*.@(css|js)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "public, max-age=3600"
-            }
-          ]
-        },
-        {
-          "source": "**/*.@(png|jpg|jpeg|gif|webp|avif|svg|ico|woff|woff2)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "public, max-age=86400"
-            }
-          ]
+            "target": "gloryofpeaceandlove-subdomain",
+            "public": "dist/hosting",
+            "cleanUrls": true,
+            "redirects": [
+                {
+                    "source": "/resources",
+                    "destination": "/articles/",
+                    "type": 301
+                },
+                {
+                    "source": "/resources/",
+                    "destination": "/articles/",
+                    "type": 301
+                }
+            ],
+            "rewrites": [
+                {
+                    "source": "**",
+                    "function": {
+                        "functionId": "programsApp",
+                        "region": "us-central1",
+                        "pinTag": true
+                    }
+                }
+            ],
+            "ignore": [
+                ".git/**",
+                "firebase.json",
+                "**/.*",
+                "**/node_modules/**"
+            ],
+            "headers": [
+                {
+                    "source": "**/*.html",
+                    "headers": [
+                        {
+                            "key": "Cache-Control",
+                            "value": "no-cache"
+                        }
+                    ]
+                },
+                {
+                    "source": "**/*.@(css|js)",
+                    "headers": [
+                        {
+                            "key": "Cache-Control",
+                            "value": "public, max-age=3600"
+                        }
+                    ]
+                },
+                {
+                    "source": "**/*.@(png|jpg|jpeg|gif|webp|avif|svg|ico|woff|woff2)",
+                    "headers": [
+                        {
+                            "key": "Cache-Control",
+                            "value": "public, max-age=86400"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "functions": [{"source":"firebase/functions","codebase":"gopal-programs","runtime":"nodejs22","ignore":["node_modules",".git","*-debug.log",".secret.local",".env*","*service-account*.json","credentials*.json"]}]
+    ],
+    "functions": [
+        {
+            "source": "firebase/functions",
+            "codebase": "gopal-programs",
+            "runtime": "nodejs22",
+            "ignore": [
+                "node_modules",
+                ".git",
+                "*-debug.log",
+                ".secret.local",
+                ".env*",
+                "*service-account*.json",
+                "credentials*.json"
+            ]
+        }
+    ]
 }
