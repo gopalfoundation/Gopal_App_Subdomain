@@ -5,7 +5,7 @@
 - Repository: `gopalfoundation/Gopal_App_Subdomain`; production branch: `main`.
 - Migration branch: `codex/production-programs-migration`.
 - URL: `https://programs.gloryofpeaceandlove.org`.
-- Existing Hosting target: `gloryofpeace-landing`.
+- Existing Hosting target: `gloryofpeaceandlove-subdomain`.
 - Build: `npm ci`, `npm ci --prefix firebase/functions`, `npm test`, `npm run build`.
 - Hosting assets: `dist/hosting`.
 - Secure runtime: `firebase/functions` (`programsApp`, Node.js 22, `us-central1`).
@@ -27,7 +27,7 @@ are not yet available to verify. Complete/confirm:
    Cloud Build/Artifact Registry and service-account use permissions in this
    project. Runtime Secret Manager access must be scoped to its secret.
 3. Verify the Hosting site already serving the custom domain. Run
-   `firebase target:apply hosting gloryofpeace-landing <existing-site-id> --project <existing-project-id>`
+   `firebase target:apply hosting gloryofpeaceandlove-subdomain <existing-site-id> --project <existing-project-id>`
    and commit `.firebaserc`. A target alias is not proof of a site ID.
 4. Confirm Blaze is already enabled and approve runtime/storage usage and spending
    limits. Cloud Functions and Secret Manager have usage costs; this migration
@@ -66,7 +66,7 @@ original local editor keeps its existing cookie. See [Firebase cookie routing](h
 4. On `main`, `deploy.yml` repeats install/tests/build and fails closed on missing
    project, credential input, private bucket or target mapping. It deploys only
    the `gopal-programs` Functions codebase, then uses the existing
-   `FirebaseExtended/action-hosting-deploy` action for `gloryofpeace-landing` live.
+   `FirebaseExtended/action-hosting-deploy` action for `gloryofpeaceandlove-subdomain` live.
 5. Hosting `pinTag` pins runtime code to its release, supporting code rollback.
    Secret/CMS changes require separate deliberate management.
 6. Verify the real custom domain before declaring success.

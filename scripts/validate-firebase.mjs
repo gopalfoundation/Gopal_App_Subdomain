@@ -2,7 +2,7 @@ import {readFile,readdir} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 const config = JSON.parse(await readFile('firebase.json','utf8'));
-assert.equal(config.hosting[0].target,'gloryofpeace-landing');
+assert.equal(config.hosting[0].target,'gloryofpeaceandlove-subdomain');
 assert.equal(config.hosting[0].public,'dist/hosting');
 assert.equal(config.hosting[0].rewrites.at(-1).function.functionId,'programsApp');
 const major=['','ram','sita','community-programs','programs','about','get-involved','contact','articles','admin','admin/ram','admin/sita'];

@@ -59,6 +59,6 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_GLORY_OF_PEACE }}
           projectId: ${{ vars.FIREBASE_PROJECT_ID }}
-          target: gloryofpeace-landing
+          target: gloryofpeaceandlove-subdomain
           channelId: live
           firebaseToolsVersion: 15.2.1

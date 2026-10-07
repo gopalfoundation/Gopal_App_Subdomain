@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "gopal-e2ad1": {
+      "hosting": {
+        "gloryofpeaceandlove-subdomain": [
+          "gloryofpeaceandlove-subdomain"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
