@@ -16,19 +16,16 @@ the function applies CMS updates and protects Admin before sending HTML.
 
 ## One-Time Organization Admin Requirements
 
-As inspected on 2026-10-06, the repository lists no Actions variables/secrets,
-has no `.firebaserc`, and its recorded deployment failed at the service-account
-input. Firebase setup is reported done but resource IDs and runtime resources
-are not yet available to verify. Complete/confirm:
+Before deployment, complete/confirm the following organization settings:
 
 1. Repository variable `FIREBASE_PROJECT_ID`: the existing project ID.
 2. Repository secret `FIREBASE_SERVICE_ACCOUNT_GLORY_OF_PEACE`: add privately,
    never commit a JSON key. The deploy identity needs scoped Hosting, Functions,
    Cloud Build/Artifact Registry and service-account use permissions in this
    project. Runtime Secret Manager access must be scoped to its secret.
-3. Verify the Hosting site already serving the custom domain. Run
-   `firebase target:apply hosting gloryofpeaceandlove-subdomain <existing-site-id> --project <existing-project-id>`
-   and commit `.firebaserc`. A target alias is not proof of a site ID.
+3. Confirm the existing Hosting site serving the custom domain is the site ID
+   mapped to `gloryofpeaceandlove-subdomain` in `.firebaserc`. A target alias is
+   not proof of a site's custom-domain association.
 4. Confirm Blaze is already enabled and approve runtime/storage usage and spending
    limits. Cloud Functions and Secret Manager have usage costs; this migration
    does not upgrade billing or create a project.
@@ -49,11 +46,47 @@ are not yet available to verify. Complete/confirm:
 
 The production workflow writes the nonsecret `CMS_BUCKET` parameter to an ignored
 function dotenv file. Four private values are read only from Secret Manager at
-runtime. The actual project/bucket/resource state requires organization access.
+runtime. The production project is `gopal-e2ad1`; the configured Hosting target
+is `gloryofpeaceandlove-subdomain`; the current CMS bucket is
+`gopal-e2ad1-programs-subdomain-cms`. Confirm the bucket's private access controls
+and runtime service-account permission in Cloud Console before deploying.
 
 Production sessions use the signed, HttpOnly, Secure, SameSite `__session` cookie:
 Firebase Hosting strips other cookie names before its function rewrite. The
 original local editor keeps its existing cookie. See [Firebase cookie routing](https://firebase.google.com/docs/hosting/manage-cache).
+
+## Manual Deployment
+
+Use this sequence when deploying from an authorized local Firebase CLI session.
+The Hosting rewrite pins `programsApp`, so deploy its Functions codebase first;
+deploying only Hosting can cause Firebase to include the pinned function in the
+Hosting operation and fail to match the codebase. Keep `pinTag` enabled.
+
+Before deployment, ensure `SITARAM_SERVER_CONFIG` exists in Secret Manager with
+the four required fields listed above, the runtime service account can access
+the private CMS bucket. Record the current Hosting release in the Firebase
+console for rollback. Never put secret values in shell history, logs, or Git.
+
+From the repository root, using Node.js 22:
+
+```sh
+npm ci
+npm ci --prefix firebase/functions
+npm test
+npm run build
+
+export FIREBASE_PROJECT_ID=gopal-e2ad1
+export CMS_BUCKET=gopal-e2ad1-programs-subdomain-cms
+node scripts/write-function-parameters.mjs
+
+npx --yes firebase-tools@15.2.1 deploy \
+   --only functions:gopal-programs --project "$FIREBASE_PROJECT_ID"
+npx --yes firebase-tools@15.2.1 deploy \
+   --only hosting:gloryofpeaceandlove-subdomain --project "$FIREBASE_PROJECT_ID"
+```
+
+Do not proceed to Hosting if the Functions deployment fails. Verify the custom
+domain and protected Admin behavior after Hosting completes.
 
 ## Release Flow
 
