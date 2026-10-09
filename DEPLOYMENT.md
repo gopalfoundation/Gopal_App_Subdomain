@@ -69,6 +69,11 @@ console for rollback. Never put secret values in shell history, logs, or Git.
 
 From the repository root, using Node.js 22:
 
+Use the pinned Firebase CLI commands below rather than an unversioned global
+`firebase` executable. The global CLI 15.15.0 in the local environment analyzes
+the Functions package under Node.js 20 and fails on its transitive ESM dependency;
+the pinned CLI 15.2.1 is the version used by this deployment setup.
+
 ```sh
 npm ci
 npm ci --prefix firebase/functions

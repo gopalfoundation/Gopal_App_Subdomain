@@ -40,6 +40,9 @@ export function createFirebaseApp({env, bucket, assets, request=fetch, secure=tr
       headers.set('X-Content-Type-Options','nosniff'); headers.set('X-Frame-Options','SAMEORIGIN');
       if (guarded || url.searchParams.has('preview') || url.searchParams.has('websitePreview')) { headers.set('Cache-Control','no-store, private'); headers.set('X-Robots-Tag','noindex, nofollow'); }
       return new Response(req.method === 'HEAD' ? null : response.body,{status:response.status,headers});
-    } catch { return new Response('Website temporarily unavailable. Please retry.',{status:503,headers:{'Cache-Control':'no-store','Content-Type':'text/plain'}}); }
+    } catch (error) {
+      console.error('Firebase app request failed', {name:error?.name || typeof error, code:error?.code});
+      return new Response('Website temporarily unavailable. Please retry.',{status:503,headers:{'Cache-Control':'no-store','Content-Type':'text/plain'}});
+    }
   };
 }
