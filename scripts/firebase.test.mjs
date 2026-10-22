@@ -19,6 +19,21 @@ function harness() {
   const call=(url,{data,authenticated=false,requestOrigin=origin}={})=>app(new Request(origin+url,{method:data?'POST':'GET',headers:{...(authenticated?{Cookie:cookie}:{}),...(data?{Origin:requestOrigin,'Content-Type':'application/json'}:{})},...(data?{body:JSON.stringify(data)}:{})}));
   return {app,bucket,records,call,get assetCalls(){return assetCalls;},login:async()=>{const r=await call('/api/admin/login',{data:{password}});assert.equal(r.status,200);assert.ok(r.headers.get('set-cookie').startsWith('__session='));assert.ok(r.headers.get('set-cookie').includes('HttpOnly'));assert.ok(r.headers.get('set-cookie').includes('Secure'));cookie=r.headers.get('set-cookie').split(';')[0];}};
 }
+
+test('Google Ads tag is defined once in the guarded public layout, not in Admin or API responses',async()=>{
+  const layout=await readFile(new URL('../src/layouts/BaseLayout.astro',import.meta.url),'utf8');
+  assert.ok(layout.includes('const isPublicPage = !/^\\/(?:admin|api)(?:\\/|$)/.test(Astro.url.pathname);'));
+  assert.ok(layout.includes('{isPublicPage && <Fragment>'));
+  assert.equal(layout.match(/https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=AW-17887984435/g)?.length,1);
+  assert.equal(layout.match(/gtag\('config', 'AW-17887984435'\)/g)?.length,1);
+  assert.ok(layout.includes('<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-17887984435">'));
+  const h=harness();
+  for (const route of ['/admin/','/admin/ram/','/admin/sita/','/admin/login/','/api/ram/registrations/responses','/api/sita/registrations/responses']) {
+    const html=await(await h.call(route)).text();
+    assert.ok(!html.includes('AW-17887984435'),route);
+    assert.ok(!html.includes('googletagmanager.com/gtag/js'),route);
+  }
+});
 test('Firebase authorizes Admin before HTML, including percent-encoded routes, and protects participant reads',async()=>{
   const h=harness();for(const route of ['/admin','/admin/ram','/%61dmin/sita','/admin%2fram'])assert.equal((await h.call(route)).status,302);
   assert.equal((await h.call('/api/ram/registrations/responses')).status,401);assert.equal(h.assetCalls,0);

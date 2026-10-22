@@ -23,6 +23,7 @@ const canonical = Astro.props.canonicalUrl || new URL(Astro.url.pathname, 'https
 const genericTitle = !/^\/(ram|sita)(\/|$)/.test(Astro.url.pathname) && !['/', '/programs', '/programs/'].includes(Astro.url.pathname);
 const titleBase = genericTitle && Astro.props.title ? title.split(' | ')[0] : '';
 const effectiveTitle = titleBase ? website.seo.titlePattern.replace('{title}', titleBase) : title;
+const isPublicPage = !/^\/(?:admin|api)(?:\/|$)/.test(Astro.url.pathname);
 ---
 <!doctype html>
 <html lang="en">
@@ -43,6 +44,17 @@ const effectiveTitle = titleBase ? website.seo.titlePattern.replace('{title}', t
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary" />
     <script type="application/ld+json" data-website-schema set:html={organizationSchema(website)} />
+    {isPublicPage && <Fragment>
+      <!-- Google tag (gtag.js) -->
+      <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-17887984435"></script>
+      <script is:inline>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17887984435');
+      </script>
+    </Fragment>}
     <script is:inline src="/scripts/site-overrides.js" defer></script>
     <script>import '../lib/website/public.mjs';</script>
   </head>

@@ -1,6 +1,7 @@
 import {readFile,readdir} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import path from 'node:path';
+import {load} from 'cheerio';
 const config = JSON.parse(await readFile('firebase.json','utf8'));
 assert.equal(config.hosting[0].target,'gloryofpeaceandlove-subdomain');
 assert.equal(config.hosting[0].public,'dist/hosting');
@@ -9,6 +10,27 @@ const major=['','ram','sita','community-programs','programs','about','get-involv
 assert.equal(config.hosting[0].redirects.find(r=>r.source==='/resources').destination,'/articles/');
 for (const route of major) await readFile(path.join('firebase/functions/site',route,'index.html'));
 async function files(root) {const result=[];for(const e of await readdir(root,{withFileTypes:true})){const p=path.join(root,e.name);if(e.isDirectory())result.push(...await files(p));else result.push(p);}return result;}
+let publicPages=0, adminPages=0;
+for (const file of (await files('firebase/functions/site')).filter(file=>file.endsWith('.html'))) {
+  const html=await readFile(file,'utf8');
+  const route=path.relative('firebase/functions/site',file).replaceAll('\\','/');
+  if (/^(?:admin|api)(?:\/|\.|$)/.test(route)) {
+    assert.ok(!html.includes('AW-17887984435'),'Private HTML must not include the Google Ads tag: '+file);
+    assert.ok(!html.includes('googletagmanager.com/gtag/js'),'Private HTML must not load gtag.js: '+file);
+    adminPages++;
+    continue;
+  }
+  const $=load(html);
+  const loaders=$('script[src]').filter((_index,element)=>$(element).attr('src').startsWith('https://www.googletagmanager.com/gtag/js'));
+  assert.equal(loaders.length,1,'Public HTML must load gtag.js exactly once: '+file);
+  assert.equal(loaders.attr('src'),'https://www.googletagmanager.com/gtag/js?id=AW-17887984435');
+  assert.equal(loaders.parents('head').length,1,'Google tag must be in the head: '+file);
+  const configs=$('head script:not([src])').filter((_index,element)=>/gtag\('config',\s*'AW-17887984435'\)/.test($(element).html() || ''));
+  assert.equal(configs.length,1,'Public HTML must configure the Ads ID exactly once: '+file);
+  publicPages++;
+}
+assert.ok(publicPages>0 && adminPages>0,'Check both public and Admin generated HTML.');
+console.log(`Google Ads tag verified: ${publicPages} public pages include one head loader/config; ${adminPages} Admin pages exclude it.`);
 for(const file of await files('dist/hosting')) {
   assert.ok(!file.endsWith('.html'),'Static HTML could bypass the runtime guard: '+file);
   assert.ok(!file.replaceAll('\\','/').startsWith('dist/hosting/admin/'),'Do not upload obsolete Admin assets outside the authorization rewrite.');
